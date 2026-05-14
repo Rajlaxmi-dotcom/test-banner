@@ -1,31 +1,31 @@
 
-let userLang = (navigator.language || (navigator).userLanguage || 'en');
+let userLang = (navigator.language || (navigator).userLanguage || 'en').split('-')[0];
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
-  "consentManagerId": "67af2b930a2edd67f71d553e",
-  "uuid": "2fba5435-b5ae-4783-ac87-48cfa391e884",
+  "consentManagerId": "6a01a9457df9dd63df232672",
+  "uuid": "c049a8c0-5539-4b14-9513-a13c5d9cca4a",
   "domain": "http://localhost/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
   lang: userLang,
   "storageMethod": "cookie",
-  "storageName": "www.guardianav.co.in",
+  "storageName": "https://www.starhealth.in/lp/kn/health-insurance-v4/",
   "cookieExpiresAfterDays": 365,
   "default": false,
   "mustConsent": false,
   "acceptAll": true,
   "hideDeclineAll": false,
-  "hideLearnMore": false,
+  "hideLearnMore": true,
   "disablePoweredBy": false,
   "translations": {
     "english": {
       "acceptAll": "Accept all",
       "accept": "Accept",
-      "decline": "Reject All",
+      "decline": "No (Opt-out)",
       "acceptSelected": "Accept Selected",
-      "ok": "Accept All",
+      "ok": "Yes (Opt-in)",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization, and analytics. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. You can change your settings at any time, <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
@@ -36,48 +36,55 @@ window.klaroConfig = {
         "buttons": {
           "save": "Accept",
           "acceptAll": "Accept all",
-          "decline": "Reject All"
+          "decline": "No (Opt-out)"
         }
       },
       "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "<p>This is cookie Others Category</p>"
-        },
-        "Marketing": {
-          "description": "<p>This is cookie Marketing Category</p>"
-        },
-        "Functional": {
-          "description": "<p>This is cookie Functional Category</p>"
-        },
-        "Analytics": {
-          "description": "<p>This is cookie Analytics Category</p>"
-        }
-      },
+      "purposes": {},
       "service": {
         "disableAll": {
-          "description": "Reject All",
-          "title": "Reject All"
+          "description": "No (Opt-out)",
+          "title": "No (Opt-out)"
         },
         "optOut": {
-          "description": "Reject All",
-          "title": "Reject All"
-        },
-        "purpose": "purpose"
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
       },
       "purposeItem": {
-        "service": "service",
-        "services": "services"
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dyjsession</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dy_soct</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Host-next-auth.csrf-token</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-next-auth.callback-url</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SRM_B</div><div><b>Host:</b>&nbsp;c.bing.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">6 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;CLID</div><div><b>Host:</b>&nbsp;www.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SM</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;IDE</div><div><b>Host:</b>&nbsp;doubleclick.net</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetsid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetvid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MUID</div><div><b>Host:</b>&nbsp;bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MR</div><div><b>Host:</b>&nbsp;bat.bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ANONCHK</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">10 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     },
     "en": {
       "acceptAll": "Accept all",
       "accept": "Accept",
-      "decline": "Reject All",
+      "decline": "No (Opt-out)",
       "acceptSelected": "Accept Selected",
-      "ok": "Accept All",
+      "ok": "Yes (Opt-in)",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization, and analytics. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. You can change your settings at any time, <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
@@ -88,48 +95,55 @@ window.klaroConfig = {
         "buttons": {
           "save": "Accept",
           "acceptAll": "Accept all",
-          "decline": "Reject All"
+          "decline": "No (Opt-out)"
         }
       },
       "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "<p>This is cookie Others Category</p>"
-        },
-        "Marketing": {
-          "description": "<p>This is cookie Marketing Category</p>"
-        },
-        "Functional": {
-          "description": "<p>This is cookie Functional Category</p>"
-        },
-        "Analytics": {
-          "description": "<p>This is cookie Analytics Category</p>"
-        }
-      },
+      "purposes": {},
       "service": {
         "disableAll": {
-          "description": "Reject All",
-          "title": "Reject All"
+          "description": "No (Opt-out)",
+          "title": "No (Opt-out)"
         },
         "optOut": {
-          "description": "Reject All",
-          "title": "Reject All"
-        },
-        "purpose": "purpose"
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
       },
       "purposeItem": {
-        "service": "service",
-        "services": "services"
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dyjsession</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dy_soct</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Host-next-auth.csrf-token</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-next-auth.callback-url</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SRM_B</div><div><b>Host:</b>&nbsp;c.bing.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">6 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;CLID</div><div><b>Host:</b>&nbsp;www.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SM</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;IDE</div><div><b>Host:</b>&nbsp;doubleclick.net</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetsid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetvid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MUID</div><div><b>Host:</b>&nbsp;bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MR</div><div><b>Host:</b>&nbsp;bat.bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ANONCHK</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">10 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     },
     "zz": {
       "acceptAll": "Accept all",
       "accept": "Accept",
-      "decline": "Reject All",
+      "decline": "No (Opt-out)",
       "acceptSelected": "Accept Selected",
-      "ok": "Accept All",
+      "ok": "Yes (Opt-in)",
       "consentNotice": {
-        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization, and analytics. By clicking “<strong>Accept All</strong>”, you consent to our use of cookies. You can change your settings at any time, <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
+        "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
         "changeDescription": " "
       },
@@ -140,350 +154,45 @@ window.klaroConfig = {
         "buttons": {
           "save": "Accept",
           "acceptAll": "Accept all",
-          "decline": "Reject All"
+          "decline": "No (Opt-out)"
         }
       },
       "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "<p>This is cookie Others Category</p>"
-        },
-        "Marketing": {
-          "description": "<p>This is cookie Marketing Category</p>"
-        },
-        "Functional": {
-          "description": "<p>This is cookie Functional Category</p>"
-        },
-        "Analytics": {
-          "description": "<p>This is cookie Analytics Category</p>"
-        }
-      },
+      "purposes": {},
       "service": {
         "disableAll": {
-          "description": "Reject All",
-          "title": "Reject All"
+          "description": "No (Opt-out)",
+          "title": "No (Opt-out)"
         },
         "optOut": {
-          "description": "Reject All",
-          "title": "Reject All"
-        },
-        "purpose": "purpose"
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
       },
       "purposeItem": {
-        "service": "service",
-        "services": "services"
-      }
-    },
-    "hindi": {
-      "acceptAll": "सभी स्वीकृत",
-      "accept": "स्वीकार करना",
-      "decline": "सभी अस्वीकार करें",
-      "acceptSelected": "चयनित स्वीकार करें",
-      "ok": "सभी स्वीकृत",
-      "consentNotice": {
-        "description": "हम आपकी गोपनीयता का सम्मान करते हैं हम आवश्यक साइट कार्यक्षमता, साथ ही मार्केटिंग, वैयक्तिकरण और एनालिटिक्स को सक्षम करने के लिए कुकीज़ संग्रहीत करते हैं। &quot;सभी स्वीकार करें&quot; पर क्लिक करके, आप कुकीज़ के हमारे उपयोग के लिए सहमति देते हैं। आप किसी भी समय अपनी सेटिंग बदल सकते हैं, कुकी नीति।",
-        "learnMore": "अनुकूलित करें",
-        "changeDescription": " "
+        "service": "Cookie",
+        "services": "Cookies"
       },
-      "save": "स्वीकार करना",
-      "consentModal": {
-        "title": "सहमति प्राथमिकताएँ अनुकूलित करें",
-        "description": "हम आपको कुशलतापूर्वक पृष्ठों के बीच नेविगेट करने, आपकी प्राथमिकताओं को संग्रहीत करने और आम तौर पर किसी वेबसाइट के आपके अनुभव को बेहतर बनाने में मदद करने के लिए कुकीज़ का उपयोग करते हैं। हालाँकि, हम आपकी गोपनीयता के अधिकार को स्वीकार करते हैं और इसलिए आप कुछ प्रकार की कुकीज़ की अनुमति नहीं देने का विकल्प चुन सकते हैं। अधिक जानकारी प्राप्त करने और हमारी डिफ़ॉल्ट सेटिंग बदलने के लिए विभिन्न श्रेणी शीर्षकों पर क्लिक करें। कृपया ध्यान दें कि कुछ प्रकार की कुकीज़ को ब्लॉक करने से साइट के आपके अनुभव पर असर पड़ सकता है।",
-        "buttons": {
-          "save": "स्वीकार करना",
-          "acceptAll": "सभी स्वीकृत",
-          "decline": "सभी अस्वीकार करें"
-        }
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
       },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "यह कुकी अन्य श्रेणी है"
-        },
-        "Marketing": {
-          "description": "यह कुकी मार्केटिंग श्रेणी है"
-        },
-        "Functional": {
-          "description": "यह कुकी कार्यात्मक श्रेणी है"
-        },
-        "Analytics": {
-          "description": "यह कुकी एनालिटिक्स श्रेणी है"
-        }
+      "functional": {
+        "title": "Functional",
+        "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dyjsession</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dy_soct</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Host-next-auth.csrf-token</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-next-auth.callback-url</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SRM_B</div><div><b>Host:</b>&nbsp;c.bing.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
       },
-      "service": {
-        "disableAll": {
-          "description": "सभी अस्वीकार करें",
-          "title": "सभी अस्वीकार करें"
-        },
-        "optOut": {
-          "description": "सभी अस्वीकार करें",
-          "title": "सभी अस्वीकार करें"
-        },
-        "purpose": "उद्देश्य"
+      "analytics": {
+        "title": "Analytics",
+        "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">6 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;CLID</div><div><b>Host:</b>&nbsp;www.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SM</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
       },
-      "purposeItem": {
-        "service": "सेवा",
-        "services": "सेवा"
-      }
-    },
-    "hi": {
-      "acceptAll": "सभी स्वीकृत",
-      "accept": "स्वीकार करना",
-      "decline": "सभी अस्वीकार करें",
-      "acceptSelected": "चयनित स्वीकार करें",
-      "ok": "सभी स्वीकृत",
-      "consentNotice": {
-        "description": "हम आपकी गोपनीयता का सम्मान करते हैं हम आवश्यक साइट कार्यक्षमता, साथ ही मार्केटिंग, वैयक्तिकरण और एनालिटिक्स को सक्षम करने के लिए कुकीज़ संग्रहीत करते हैं। &quot;सभी स्वीकार करें&quot; पर क्लिक करके, आप कुकीज़ के हमारे उपयोग के लिए सहमति देते हैं। आप किसी भी समय अपनी सेटिंग बदल सकते हैं, कुकी नीति।",
-        "learnMore": "अनुकूलित करें",
-        "changeDescription": " "
+      "marketing": {
+        "title": "Marketing",
+        "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;IDE</div><div><b>Host:</b>&nbsp;doubleclick.net</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetsid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetvid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MUID</div><div><b>Host:</b>&nbsp;bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MR</div><div><b>Host:</b>&nbsp;bat.bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ANONCHK</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
       },
-      "save": "स्वीकार करना",
-      "consentModal": {
-        "title": "सहमति प्राथमिकताएँ अनुकूलित करें",
-        "description": "हम आपको कुशलतापूर्वक पृष्ठों के बीच नेविगेट करने, आपकी प्राथमिकताओं को संग्रहीत करने और आम तौर पर किसी वेबसाइट के आपके अनुभव को बेहतर बनाने में मदद करने के लिए कुकीज़ का उपयोग करते हैं। हालाँकि, हम आपकी गोपनीयता के अधिकार को स्वीकार करते हैं और इसलिए आप कुछ प्रकार की कुकीज़ की अनुमति नहीं देने का विकल्प चुन सकते हैं। अधिक जानकारी प्राप्त करने और हमारी डिफ़ॉल्ट सेटिंग बदलने के लिए विभिन्न श्रेणी शीर्षकों पर क्लिक करें। कृपया ध्यान दें कि कुछ प्रकार की कुकीज़ को ब्लॉक करने से साइट के आपके अनुभव पर असर पड़ सकता है।",
-        "buttons": {
-          "save": "स्वीकार करना",
-          "acceptAll": "सभी स्वीकृत",
-          "decline": "सभी अस्वीकार करें"
-        }
-      },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "यह कुकी अन्य श्रेणी है"
-        },
-        "Marketing": {
-          "description": "यह कुकी मार्केटिंग श्रेणी है"
-        },
-        "Functional": {
-          "description": "यह कुकी कार्यात्मक श्रेणी है"
-        },
-        "Analytics": {
-          "description": "यह कुकी एनालिटिक्स श्रेणी है"
-        }
-      },
-      "service": {
-        "disableAll": {
-          "description": "सभी अस्वीकार करें",
-          "title": "सभी अस्वीकार करें"
-        },
-        "optOut": {
-          "description": "सभी अस्वीकार करें",
-          "title": "सभी अस्वीकार करें"
-        },
-        "purpose": "उद्देश्य"
-      },
-      "purposeItem": {
-        "service": "सेवा",
-        "services": "सेवा"
-      }
-    },
-    "marathi": {
-      "acceptAll": "सर्व स्वीकारा",
-      "accept": "स्वीकारा",
-      "decline": "सर्व नाकारा",
-      "acceptSelected": "निवडलेले स्वीकारा",
-      "ok": "सर्व स्वीकारा",
-      "consentNotice": {
-        "description": "आम्ही तुमच्या गोपनीयतेचा आदर करतो. आम्ही आवश्यक साइट कार्यक्षमता, तसेच मार्केटिंग, वैयक्तिकरण आणि विश्लेषण सक्षम करण्यासाठी कुकीज संग्रहित करतो. &quot;सर्व स्वीकारा&quot; वर क्लिक करून, तुम्ही आमच्या कुकीजच्या वापरास संमती देता. तुम्ही कधीही तुमच्या सेटिंग्ज बदलू शकता, कुकी धोरण.",
-        "learnMore": "सानुकूलित करा",
-        "changeDescription": " "
-      },
-      "save": "स्वीकारा",
-      "consentModal": {
-        "title": "संमती प्राधान्ये कस्टमाइझ करा",
-        "description": "आम्ही कुकीजचा वापर तुम्हाला पृष्ठांमध्ये कार्यक्षमतेने नेव्हिगेट करण्यास, तुमच्या पसंती संग्रहित करण्यास आणि सामान्यतः वेबसाइटवरील तुमचा अनुभव सुधारण्यास मदत करण्यासाठी करतो. तथापि, आम्ही तुमचा गोपनीयतेचा अधिकार मान्य करतो आणि म्हणून तुम्ही काही प्रकारच्या कुकीजना परवानगी न देणे निवडू शकता. अधिक जाणून घेण्यासाठी आणि आमच्या डीफॉल्ट सेटिंग्ज बदलण्यासाठी वेगवेगळ्या श्रेणी शीर्षकांवर क्लिक करा. कृपया लक्षात ठेवा की विशिष्ट प्रकारच्या कुकीज अवरोधित केल्याने साइटवरील तुमच्या अनुभवावर परिणाम होऊ शकतो.",
-        "buttons": {
-          "save": "स्वीकारा",
-          "acceptAll": "सर्व स्वीकारा",
-          "decline": "सर्व नाकारा"
-        }
-      },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "ही कुकी इतर श्रेणी आहे."
-        },
-        "Marketing": {
-          "description": "ही कुकी मार्केटिंग श्रेणी आहे."
-        },
-        "Functional": {
-          "description": "ही कुकी फंक्शनल कॅटेगरी आहे."
-        },
-        "Analytics": {
-          "description": "ही कुकी अॅनालिटिक्स श्रेणी आहे."
-        }
-      },
-      "service": {
-        "disableAll": {
-          "description": "सर्व नाकारा",
-          "title": "सर्व नाकारा"
-        },
-        "optOut": {
-          "description": "सर्व नाकारा",
-          "title": "सर्व नाकारा"
-        },
-        "purpose": "उद्देश"
-      },
-      "purposeItem": {
-        "service": "सेवा",
-        "services": "सेवा"
-      }
-    },
-    "mr": {
-      "acceptAll": "सर्व स्वीकारा",
-      "accept": "स्वीकारा",
-      "decline": "सर्व नाकारा",
-      "acceptSelected": "निवडलेले स्वीकारा",
-      "ok": "सर्व स्वीकारा",
-      "consentNotice": {
-        "description": "आम्ही तुमच्या गोपनीयतेचा आदर करतो. आम्ही आवश्यक साइट कार्यक्षमता, तसेच मार्केटिंग, वैयक्तिकरण आणि विश्लेषण सक्षम करण्यासाठी कुकीज संग्रहित करतो. &quot;सर्व स्वीकारा&quot; वर क्लिक करून, तुम्ही आमच्या कुकीजच्या वापरास संमती देता. तुम्ही कधीही तुमच्या सेटिंग्ज बदलू शकता, कुकी धोरण.",
-        "learnMore": "सानुकूलित करा",
-        "changeDescription": " "
-      },
-      "save": "स्वीकारा",
-      "consentModal": {
-        "title": "संमती प्राधान्ये कस्टमाइझ करा",
-        "description": "आम्ही कुकीजचा वापर तुम्हाला पृष्ठांमध्ये कार्यक्षमतेने नेव्हिगेट करण्यास, तुमच्या पसंती संग्रहित करण्यास आणि सामान्यतः वेबसाइटवरील तुमचा अनुभव सुधारण्यास मदत करण्यासाठी करतो. तथापि, आम्ही तुमचा गोपनीयतेचा अधिकार मान्य करतो आणि म्हणून तुम्ही काही प्रकारच्या कुकीजना परवानगी न देणे निवडू शकता. अधिक जाणून घेण्यासाठी आणि आमच्या डीफॉल्ट सेटिंग्ज बदलण्यासाठी वेगवेगळ्या श्रेणी शीर्षकांवर क्लिक करा. कृपया लक्षात ठेवा की विशिष्ट प्रकारच्या कुकीज अवरोधित केल्याने साइटवरील तुमच्या अनुभवावर परिणाम होऊ शकतो.",
-        "buttons": {
-          "save": "स्वीकारा",
-          "acceptAll": "सर्व स्वीकारा",
-          "decline": "सर्व नाकारा"
-        }
-      },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "ही कुकी इतर श्रेणी आहे."
-        },
-        "Marketing": {
-          "description": "ही कुकी मार्केटिंग श्रेणी आहे."
-        },
-        "Functional": {
-          "description": "ही कुकी फंक्शनल कॅटेगरी आहे."
-        },
-        "Analytics": {
-          "description": "ही कुकी अॅनालिटिक्स श्रेणी आहे."
-        }
-      },
-      "service": {
-        "disableAll": {
-          "description": "सर्व नाकारा",
-          "title": "सर्व नाकारा"
-        },
-        "optOut": {
-          "description": "सर्व नाकारा",
-          "title": "सर्व नाकारा"
-        },
-        "purpose": "उद्देश"
-      },
-      "purposeItem": {
-        "service": "सेवा",
-        "services": "सेवा"
-      }
-    },
-    "japanese": {
-      "acceptAll": "すべて受け入れる",
-      "accept": "受け入れる",
-      "decline": "すべて拒否",
-      "acceptSelected": "選択を受け入れる",
-      "ok": "すべて受け入れる",
-      "consentNotice": {
-        "description": "お客様のプライバシーを尊重します。当サイトでは、サイトの基本的な機能、マーケティング、パーソナライゼーション、分析のためにCookieを使用しています。「すべて承認」をクリックすると、Cookieの使用に同意したことになります。設定はいつでも変更できます。Cookieポリシー。",
-        "learnMore": "カスタマイズ",
-        "changeDescription": " "
-      },
-      "save": "受け入れる",
-      "consentModal": {
-        "title": "同意設定をカスタマイズする",
-        "description": "当社は、ページ間のナビゲーションを効率化し、お客様の設定を保存し、ウェブサイトの利便性を向上させるためにCookieを使用しています。ただし、お客様のプライバシー権を尊重し、一部のCookieを拒否することもできます。各カテゴリの見出しをクリックすると、詳細が表示され、デフォルト設定を変更できます。ただし、特定のCookieをブロックすると、ウェブサイトの利便性に影響が出る可能性があることにご注意ください。",
-        "buttons": {
-          "save": "受け入れる",
-          "acceptAll": "すべて受け入れる",
-          "decline": "すべて拒否"
-        }
-      },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "これはCookieのその他のカテゴリです"
-        },
-        "Marketing": {
-          "description": "これはCookieマーケティングカテゴリです"
-        },
-        "Functional": {
-          "description": "これはCookieの機能カテゴリです"
-        },
-        "Analytics": {
-          "description": "これはCookie分析カテゴリです"
-        }
-      },
-      "service": {
-        "disableAll": {
-          "description": "すべて拒否",
-          "title": "すべて拒否"
-        },
-        "optOut": {
-          "description": "すべて拒否",
-          "title": "すべて拒否"
-        },
-        "purpose": "目的"
-      },
-      "purposeItem": {
-        "service": "サービス",
-        "services": "サービス"
-      }
-    },
-    "ja": {
-      "acceptAll": "すべて受け入れる",
-      "accept": "受け入れる",
-      "decline": "すべて拒否",
-      "acceptSelected": "選択を受け入れる",
-      "ok": "すべて受け入れる",
-      "consentNotice": {
-        "description": "お客様のプライバシーを尊重します。当サイトでは、サイトの基本的な機能、マーケティング、パーソナライゼーション、分析のためにCookieを使用しています。「すべて承認」をクリックすると、Cookieの使用に同意したことになります。設定はいつでも変更できます。Cookieポリシー。",
-        "learnMore": "カスタマイズ",
-        "changeDescription": " "
-      },
-      "save": "受け入れる",
-      "consentModal": {
-        "title": "同意設定をカスタマイズする",
-        "description": "当社は、ページ間のナビゲーションを効率化し、お客様の設定を保存し、ウェブサイトの利便性を向上させるためにCookieを使用しています。ただし、お客様のプライバシー権を尊重し、一部のCookieを拒否することもできます。各カテゴリの見出しをクリックすると、詳細が表示され、デフォルト設定を変更できます。ただし、特定のCookieをブロックすると、ウェブサイトの利便性に影響が出る可能性があることにご注意ください。",
-        "buttons": {
-          "save": "受け入れる",
-          "acceptAll": "すべて受け入れる",
-          "decline": "すべて拒否"
-        }
-      },
-      "poweredBy": "Powered by Seqrite",
-      "purposes": {
-        "Others": {
-          "description": "これはCookieのその他のカテゴリです"
-        },
-        "Marketing": {
-          "description": "これはCookieマーケティングカテゴリです"
-        },
-        "Functional": {
-          "description": "これはCookieの機能カテゴリです"
-        },
-        "Analytics": {
-          "description": "これはCookie分析カテゴリです"
-        }
-      },
-      "service": {
-        "disableAll": {
-          "description": "すべて拒否",
-          "title": "すべて拒否"
-        },
-        "optOut": {
-          "description": "すべて拒否",
-          "title": "すべて拒否"
-        },
-        "purpose": "目的"
-      },
-      "purposeItem": {
-        "service": "サービス",
-        "services": "サービス"
+      "others": {
+        "title": "Others",
+        "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">10 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     }
   },
@@ -496,167 +205,235 @@ window.klaroConfig = {
   "htmlTexts": true,
   "embedded": false,
   "declarative": false,
-  "groupByPurpose": true,
+  "groupByPurpose": false,
   "hideToggleAll": false,
-  "appName": "www.guardianav.co.in",
+  "appName": "ck-enh2",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "www.guardianav.co.in",
+  "companyName": "ck-enh2",
   "companyAddress": " ",
+  "doubleOptIn": {
+    "enabled": true,
+    "message": "<p>Are you sure you want to opt-in?</p>",
+    "messageTextColor": "#43436c",
+    "messageBackgroundColor": "#f9f9ff",
+    "yesText": "Yes (Opt-in)",
+    "yesTextColor": "#f2f2f2",
+    "yesBackgroundColor": "#5249EB",
+    "noText": "No (Opt-out)",
+    "noTextColor": "#7879A1",
+    "noBackgroundColor": "#ffffff",
+    "goBackText": "Go Back",
+    "goBackTextColor": "#f2f2f2",
+    "goBackBackgroundColor": "#6c757d"
+  },
   "services": [
     {
-      "name": "_ga_HY6EH3QQ58",
-      "title": "_ga_HY6EH3QQ58",
-      "purposes": [
-        "Others"
-      ],
-      "required": false,
-      "default": true,
+      "name": "functional",
+      "title": "Functional",
+      "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dyjsession</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_dy_soct</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ak_bmsc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Host-next-auth.csrf-token</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-next-auth.callback-url</div><div><b>Host:</b>&nbsp;www.starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sv</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SRM_B</div><div><b>Host:</b>&nbsp;c.bing.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_abck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>",
+      "purposes": [],
+      "required": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_ga_HY6EH3QQ58"
+        "_dyjsession",
+        "_dy_soct",
+        "ak_bmsc",
+        "__Host-next-auth.csrf-token",
+        "__Secure-next-auth.callback-url",
+        "bm_sv",
+        "SRM_B",
+        "_abck"
       ]
     },
     {
-      "name": "_gat_gtag_UA_2934888_22",
-      "title": "_gat_gtag_UA_2934888_22",
-      "purposes": [
-        "Others"
-      ],
+      "name": "analytics",
+      "title": "Analytics",
+      "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">6 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;CLID</div><div><b>Host:</b>&nbsp;www.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clck</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_clsk</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;SM</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Analytics Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_J59EYF8C12</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>",
+      "purposes": [],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_gat_gtag_UA_2934888_22"
+        "CLID",
+        "_ga",
+        "_clck",
+        "_clsk",
+        "SM",
+        "_ga_J59EYF8C12"
       ]
     },
     {
-      "name": "_gat_UA-2934888-22",
-      "title": "_gat_UA-2934888-22",
-      "purposes": [
-        "Others"
-      ],
+      "name": "marketing",
+      "title": "Marketing",
+      "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior. </p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">8 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_gcl_au</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Google Ads</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;IDE</div><div><b>Host:</b>&nbsp;doubleclick.net</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_fbp</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Facebook/Meta Pixel</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetsid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_uetvid</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Microsoft Clarity</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MUID</div><div><b>Host:</b>&nbsp;bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;MR</div><div><b>Host:</b>&nbsp;bat.bing.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;ANONCHK</div><div><b>Host:</b>&nbsp;c.clarity.ms</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>",
+      "purposes": [],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_gat_UA-2934888-22"
+        "_gcl_au",
+        "IDE",
+        "_fbp",
+        "_uetsid",
+        "_uetvid",
+        "MUID",
+        "MR",
+        "ANONCHK"
       ]
     },
     {
-      "name": "_ga",
-      "title": "_ga",
-      "purposes": [
-        "Analytics"
-      ],
+      "name": "others",
+      "title": "Others",
+      "description": "<p>NA</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">10 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;bm_sz</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_sc</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_user_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_group_trait</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_anonymous_id</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referrer</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;nt_page_init_referring_domain</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;neo_session</div><div><b>Host:</b>&nbsp;starhealth.in</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>",
+      "purposes": [],
       "required": false,
-      "default": true,
+      "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_ga"
-      ]
-    },
-    {
-      "name": "_fbp",
-      "title": "_fbp",
-      "purposes": [
-        "Marketing"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "_fbp"
-      ]
-    },
-    {
-      "name": "zc_consent",
-      "title": "zc_consent",
-      "purposes": [
-        "Functional"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "zc_consent"
-      ]
-    },
-    {
-      "name": "_gcl_au",
-      "title": "_gcl_au",
-      "purposes": [
-        "Marketing"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "_gcl_au"
-      ]
-    },
-    {
-      "name": "location",
-      "title": "location",
-      "purposes": [
-        "Others"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "location"
-      ]
-    },
-    {
-      "name": "zc_show",
-      "title": "zc_show",
-      "purposes": [
-        "Marketing"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "zc_show"
-      ]
-    },
-    {
-      "name": "frontend",
-      "title": "frontend",
-      "purposes": [
-        "Functional"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "frontend"
-      ]
-    },
-    {
-      "name": "_gid",
-      "title": "_gid",
-      "purposes": [
-        "Analytics"
-      ],
-      "required": false,
-      "default": true,
-      "optOut": false,
-      "onlyOnce": true,
-      "cookies": [
-        "_gid"
+        "bm_sz",
+        "neo_sc",
+        "nt_user_id",
+        "nt_trait",
+        "nt_group_id",
+        "nt_group_trait",
+        "nt_anonymous_id",
+        "nt_page_init_referrer",
+        "nt_page_init_referring_domain",
+        "neo_session"
       ]
     }
   ]
 };
+
+(function setupDoubleOptInFlow() {
+  const pollForManager = function(retries) {
+    if (!window.klaro || typeof window.klaro.getManager !== 'function') {
+      if (retries > 0) {
+        setTimeout(function() { pollForManager(retries - 1); }, 200);
+      }
+      return;
+    }
+
+    const manager = window.klaro.getManager();
+    if (!manager) {
+      if (retries > 0) {
+        setTimeout(function() { pollForManager(retries - 1); }, 200);
+      }
+      return;
+    }
+
+    if (manager.__seqriteDoubleOptInPatched) {
+      return;
+    }
+
+    manager.__seqriteDoubleOptInPatched = true;
+    const originalSaveAndApply = manager.saveAndApplyConsents;
+    if (typeof originalSaveAndApply !== 'function') {
+      return;
+    }
+
+    manager.saveAndApplyConsents = function() {
+      const cfg = window.klaroConfig && window.klaroConfig.doubleOptIn;
+      if (!cfg || !cfg.enabled) {
+        return originalSaveAndApply.apply(this, arguments);
+      }
+
+      if (document.getElementById('seqrite-double-optin-overlay')) {
+        return;
+      }
+
+      const saveArgs = arguments;
+      const overlay = document.createElement('div');
+      overlay.id = 'seqrite-double-optin-overlay';
+      overlay.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:2147483647;display:flex;align-items:center;justify-content:center;padding:16px;';
+
+      const modal = document.createElement('div');
+      modal.style.cssText = 'width:100%;max-width:520px;border-radius:8px;padding:20px;box-shadow:0 10px 28px rgba(0,0,0,0.28);background:' + (cfg.messageBackgroundColor || '#f9f9ff') + ';color:' + (cfg.messageTextColor || '#43436c') + ';';
+
+      const body = document.createElement('div');
+      body.style.cssText = 'margin-bottom:18px;line-height:1.5;';
+      body.innerHTML = cfg.message || '<p>Are you sure you want to opt-in?</p>';
+
+      const actions = document.createElement('div');
+      actions.style.cssText = 'display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;';
+
+      const makeBtn = function(label, bg, color) {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.textContent = label;
+        btn.style.cssText = 'border:1px solid transparent;border-radius:4px;padding:8px 14px;font-size:14px;cursor:pointer;background:' + bg + ';color:' + color + ';';
+        return btn;
+      };
+
+      const noButton = makeBtn(
+        cfg.noText || 'No (Opt-out)',
+        cfg.noBackgroundColor || '#ffffff',
+        cfg.noTextColor || '#7879A1'
+      );
+      const goBackButton = makeBtn(
+        cfg.goBackText || 'Go Back',
+        cfg.goBackBackgroundColor || '#6c757d',
+        cfg.goBackTextColor || '#f2f2f2'
+      );
+      const yesButton = makeBtn(
+        cfg.yesText || 'Yes (Opt-in)',
+        cfg.yesBackgroundColor || '#5249EB',
+        cfg.yesTextColor || '#f2f2f2'
+      );
+
+      const removeModal = function() {
+        const existing = document.getElementById('seqrite-double-optin-overlay');
+        if (existing) {
+          existing.remove();
+        }
+      };
+
+      yesButton.onclick = function() {
+        removeModal();
+        originalSaveAndApply.apply(manager, saveArgs);
+      };
+
+      noButton.onclick = function() {
+        const services = (window.klaroConfig && window.klaroConfig.services) || [];
+        if (!manager.consents || typeof manager.consents !== 'object') {
+          manager.consents = {};
+        }
+
+        services.forEach(function(service) {
+          const serviceName = service && service.name;
+          if (serviceName) {
+            manager.consents[serviceName] = !!service.required;
+          }
+        });
+
+        removeModal();
+        originalSaveAndApply.apply(manager, saveArgs);
+      };
+
+      goBackButton.onclick = function() {
+        removeModal();
+        if (window.klaro && typeof window.klaro.show === 'function') {
+          window.klaro.show(window.klaroConfig);
+        }
+      };
+
+      actions.appendChild(noButton);
+      actions.appendChild(goBackButton);
+      actions.appendChild(yesButton);
+
+      modal.appendChild(body);
+      modal.appendChild(actions);
+      overlay.appendChild(modal);
+      document.body.appendChild(overlay);
+    };
+  };
+
+  pollForManager(40);
+})();
+
 showCookie();
