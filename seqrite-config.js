@@ -2,14 +2,14 @@
 let userLang = (navigator.language || (navigator).userLanguage || 'en').split('-')[0];
 console.log("Browser Language Code: ", userLang);
 window.klaroConfig = {
-  "consentManagerId": "69df30911fe1fa0d2a5e84cb",
-  "uuid": "d4965b2e-05da-4d45-8e85-a4d6e00e7181",
+  "consentManagerId": "69f87f58685ae63ddde7cf28",
+  "uuid": "233be4b5-12d9-4b31-a19a-4e26a64e8534",
   "domain": "https://devop.pre-dataprivacy.com/cmapi",
   "version": 1,
   "elementID": "SEQRITE",
   lang: userLang,
   "storageMethod": "cookie",
-  "storageName": "https://cookie-consent-enforcement-sdpdev.netlify.app",
+  "storageName": "https://google.com",
   "cookieExpiresAfterDays": 365,
   "default": false,
   "mustConsent": false,
@@ -21,9 +21,9 @@ window.klaroConfig = {
     "english": {
       "acceptAll": "Accept all",
       "accept": "Accept",
-      "decline": "Reject All",
+      "decline": "No (Opt-out)",
       "acceptSelected": "Accept Selected",
-      "ok": "Accept All",
+      "ok": "Yes (Opt-in)",
       "consentNotice": {
         "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
@@ -36,15 +36,15 @@ window.klaroConfig = {
         "buttons": {
           "save": "Accept",
           "acceptAll": "Accept all",
-          "decline": "Reject All"
+          "decline": "No (Opt-out)"
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {},
       "service": {
         "disableAll": {
-          "description": "Reject All",
-          "title": "Reject All"
+          "description": "No (Opt-out)",
+          "title": "No (Opt-out)"
         },
         "optOut": {
           "description": "Opt Out",
@@ -60,21 +60,25 @@ window.klaroConfig = {
         "acceptOnce": "Accept once",
         "acceptAlways": "Accept always"
       },
-      "analytics": {
-        "title": "Analytics",
-        "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_89RWJTCPLZ</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
+      "functional": {
+        "title": "Functional",
+        "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
       },
       "others": {
         "title": "Others",
-        "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;https://cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;marketing_id</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+        "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     },
     "en": {
       "acceptAll": "Accept all",
       "accept": "Accept",
-      "decline": "Reject All",
+      "decline": "No (Opt-out)",
       "acceptSelected": "Accept Selected",
-      "ok": "Accept All",
+      "ok": "Yes (Opt-in)",
       "consentNotice": {
         "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
@@ -87,15 +91,15 @@ window.klaroConfig = {
         "buttons": {
           "save": "Accept",
           "acceptAll": "Accept all",
-          "decline": "Reject All"
+          "decline": "No (Opt-out)"
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {},
       "service": {
         "disableAll": {
-          "description": "Reject All",
-          "title": "Reject All"
+          "description": "No (Opt-out)",
+          "title": "No (Opt-out)"
         },
         "optOut": {
           "description": "Opt Out",
@@ -111,21 +115,25 @@ window.klaroConfig = {
         "acceptOnce": "Accept once",
         "acceptAlways": "Accept always"
       },
-      "analytics": {
-        "title": "Analytics",
-        "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_89RWJTCPLZ</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
+      "functional": {
+        "title": "Functional",
+        "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
       },
       "others": {
         "title": "Others",
-        "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;https://cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;marketing_id</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+        "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     },
     "zz": {
       "acceptAll": "Accept all",
       "accept": "Accept",
-      "decline": "Reject All",
+      "decline": "No (Opt-out)",
       "acceptSelected": "Accept Selected",
-      "ok": "Accept All",
+      "ok": "Yes (Opt-in)",
       "consentNotice": {
         "description": "<p><strong>We respect your privacy</strong></p><p>We store cookies to enable essential site functionality, as well as marketing, personalization and analytics. By clicking “Accept All”, you consent to our use of cookies. You can change your settings at any time. <a href=\"https://www.google.com/\" title=\"https://www.google.com/\" target=\"_blank\"><u>Cookie Policy.</u></a></p>",
         "learnMore": "Customize",
@@ -138,15 +146,15 @@ window.klaroConfig = {
         "buttons": {
           "save": "Accept",
           "acceptAll": "Accept all",
-          "decline": "Reject All"
+          "decline": "No (Opt-out)"
         }
       },
       "poweredBy": "Powered by Seqrite",
       "purposes": {},
       "service": {
         "disableAll": {
-          "description": "Reject All",
-          "title": "Reject All"
+          "description": "No (Opt-out)",
+          "title": "No (Opt-out)"
         },
         "optOut": {
           "description": "Opt Out",
@@ -162,13 +170,1172 @@ window.klaroConfig = {
         "acceptOnce": "Accept once",
         "acceptAlways": "Accept always"
       },
-      "analytics": {
-        "title": "Analytics",
-        "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_89RWJTCPLZ</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>"
+      "functional": {
+        "title": "Functional",
+        "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
       },
       "others": {
         "title": "Others",
-        "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;https://cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;marketing_id</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+        "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "ks": {
+      "acceptAll": "سٲری کر قبوٗل۔",
+      "accept": "قبول کرن۔",
+      "decline": "نہ (آپٹ آؤٹ)",
+      "acceptSelected": "منتخب کر قبول۔",
+      "ok": "جی ہاں (آپٹ ان)",
+      "consentNotice": {
+        "description": "أسۍ چھ تہنٛز راز دٲری ہنٛد احترام کران أسۍ چھ ضروری سایٹہ ہنٛز فعالیتس سۭتۍ مارکیٹنگ، پرسنلائزیشن تہٕ تجزیاتن فعال کرنہٕ خٲطرٕ کوکیز ذخیرٕ کران۔ \"تمام قبول کرو\" کلک کرتھ، تہۍ چھو سانۍ کوکیز استعمال کرنہٕ خٲطرٕ رضامند۔ تہۍ ہیٚکو کنہ تہ وقتہٕ پنٕنۍ سیٹنگہٕ تبدیل کٔرتھ۔ کوکی پالیسی۔",
+        "learnMore": "کسٹمائز کر۔",
+        "changeDescription": " "
+      },
+      "save": "قبول کرن۔",
+      "consentModal": {
+        "title": "رضامندی ہنز ترجیحات کر کسٹمائز",
+        "description": "أسۍ چھ کوکیز استعمال کران تۄہہ پیجن درمیان کامیٲبی سان نیویگیٹ کرنس منٛز مدد کرنہٕ خٲطرٕ، تہنٛز ترجیحات ذخیرٕ کرنہٕ خٲطرٕ، تہٕ عام طور پٲٹھۍ ویب سایٹہ ہنٛد تہنٛد تجربہٕ بہتر بناونہٕ خٲطرٕ۔ وونہ گو٘، أسۍ چھ تہنٛد راز دٲری ہنٛد حق تسلیم کران تہٕ امہ کنہ ہیٚکو تہۍ کیٚنٛہہ قٕسمٕک کوکیزن اجازت نہٕ دنک انتخاب کٔرتھ۔ زیادٕ زانٛکٲری تہٕ سٲنۍ ڈیفالٹ سیٹنگہٕ بدلاونہٕ خٲطرٕ کٔرو مختٔلف زمرٕ کین عنوانن پؠٹھ کلک۔ مہربٲنی کٔرتھ کٔرو نوٹ ز کیٚنٛہہ قٕسمٕک کوکیز بلاک کرنہٕ سۭتۍ ہیٚکہ تہنٛد سایٹہ ہنٛد تجربہٕ متٲثر گژھتھ۔",
+        "buttons": {
+          "save": "قبول کرن۔",
+          "acceptAll": "سٲری کر قبوٗل۔",
+          "decline": "نہ (آپٹ آؤٹ)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "نہ (آپٹ آؤٹ)",
+          "title": "نہ (آپٹ آؤٹ)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "أسۍ چھ یم کوکیز ویب سایٹہ پیٹھ کٲم کرنہٕ خٲطرٕ تہٕ صارف کہ تجربہٕ بہتر بناونہٕ خٲطرٕ استعمال کران۔ زانٛکٲری منٛز ہیٚکہ لاگ ان ڈیٹا، خطہٕ، زبان تہٕ بہتر مواد شٲمل ٲستھ۔<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "یم کوکیز چھ سٲنۍ تشہیری شراکت دارن ذریعہٕ ذاتی اشتہار دنہٕ تہٕ مارکیٹنگ مہمن ہنٛد اثر و رسوخچ پیمٲئش کرنہٕ خٲطرٕ استعمال یوان کرنہٕ۔ تم چھ صارفن ہنٛز دلچسپین تہٕ براؤزنگ رویس پیٹھ مبنی متعلقہ پروموشنز فراہم کرنس منٛز مدد کران۔<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "اتھ زمرس منٛز چھ کوکیز شأمل یم نہٕ گوڑنتھ طے شدٕ زمرن منٛز فٹ چھ آسان مگر ویب سائٹچ کنہہ فعالیتہٕ یا بہتری خاطرٕ چھ ضروری۔<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "doi": {
+      "acceptAll": "सभनें गी मंजूर करो",
+      "accept": "मंजूर करो",
+      "decline": "नेईं (ऑप्ट-आउट)",
+      "acceptSelected": "चुने गेदे गी मंजूर करो",
+      "ok": "हां (विकल्प-विकल्प)",
+      "consentNotice": {
+        "description": "अस तुंʼदी निजता दा सम्मान करदे आं अस जरूरी साइट कार्यक्षमता दे कन्नै-कन्नै मार्केटिंग, निजीकरण ते विश्लेषिकी गी सक्षम करने आस्तै कुकीज़ स्टोर करदे आं। \"सभनें गी मंजूर करो\" पर क्लिक करियै, तुस साड़ियां कुकीज़ दे इस्तेमाल आस्तै सैह्मती दिंदे ओ। तुस कुसै बी समें अपनी सेटिंग बदली सकदे ओ। कुकी नीति।",
+        "learnMore": "अनुकूलित करो",
+        "changeDescription": " "
+      },
+      "save": "मंजूर करो",
+      "consentModal": {
+        "title": "सहमति वरीयताएं गी अनुकूलित करो",
+        "description": "अस पेजें दे बिच्च कुशलता कन्नै नैविगेट करने च तुंʼदी मदद करने, तुंʼदी पसंदें गी स्टोर करने ते आमतौरा पर कुसै वैबसाइट दे तुंʼदे अनुभव गी सधारत करने आस्तै कुकीज़ दा इस्तेमाल करदे आं। हालां-के, अस तुंʼदे निजता दे हक्क गी मंजूर करदे आं ते इस करियै तुस किश किस्में दियें कुकीज़ गी इजाज़त नेईं देने दा विकल्प चुन सकदे ओ। मती जानकारी हासल करने ते अपनी डिफ़ॉल्ट सेटिंग्स गी बदलने आस्तै बक्ख-बक्ख वर्ग शीर्षकें पर क्लिक करो। कृपा करियै ध्यान देओ जे किश किस्में दियें कुकीज़ गी अवरुद्ध करना साइट दे तुंʼदे अनुभव गी प्रभावत करी सकदा ऐ।",
+        "buttons": {
+          "save": "मंजूर करो",
+          "acceptAll": "सभनें गी मंजूर करो",
+          "decline": "नेईं (ऑप्ट-आउट)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "नेईं (ऑप्ट-आउट)",
+          "title": "नेईं (ऑप्ट-आउट)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "अस इʼनें कुकीज़ दा उपयोग वैबसाइट दी कार्यक्षमता गी बधाने ते उपयोगकर्ता अनुभव गी सधारत करने आस्तै करदे आं। जानकारी च लाग-इन डेटा, खेतर, भाशा ते उन्नत सामग्री शामल होई सकदी ऐ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "इʼनें कुकीज़ दा उपयोग हमारे विज्ञापन भागीदारें आसेआ निजीकृत विज्ञापन देने ते मार्केटिंग अभियानें दी प्रभावशीलता गी नापने आस्तै कीता जंदा ऐ। ओह् उपयोगकर्ता दी दिलचस्पी ते ब्राउज़िंग बर्ताव दे अधार पर प्रासंगिक प्रचार प्रदान करने च मदद करदे न।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "इस वर्ग च कुकीज शामल न जेह्ड़े पूर्वपरिभाषित श्रेणियें च खरा नेईं उतरदे पर किश वैबसाइट कार्यक्षमताएं जां सधारें आस्तै लाजमी होई सकदे न।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "ml": {
+      "acceptAll": "എല്ലാം സ്വീകരിക്കുക",
+      "accept": "സ്വീകരിക്കുക",
+      "decline": "ഇല്ല (ഒഴിവാക്കുക)",
+      "acceptSelected": "തിരഞ്ഞെടുത്തവ സ്വീകരിക്കുക",
+      "ok": "അതെ (തിരഞ്ഞെടുക്കുക)",
+      "consentNotice": {
+        "description": "നിങ്ങളുടെ സ്വകാര്യതയെ ഞങ്ങൾ മാനിക്കുന്നു, അവശ്യ സൈറ്റ് പ്രവർത്തനക്ഷമത, മാർക്കറ്റിംഗ്, വ്യക്തിഗതമാക്കൽ, വിശകലനം എന്നിവ പ്രാപ്തമാക്കുന്നതിന് ഞങ്ങൾ കുക്കികൾ സംഭരിക്കുന്നു. \"എല്ലാം സ്വീകരിക്കുക\" ക്ലിക്കുചെയ്യുന്നതിലൂടെ, ഞങ്ങളുടെ കുക്കികളുടെ ഉപയോഗത്തിന് നിങ്ങൾ സമ്മതിക്കുന്നു. നിങ്ങൾക്ക് എപ്പോൾ വേണമെങ്കിലും നിങ്ങളുടെ ക്രമീകരണങ്ങൾ മാറ്റാം. കുക്കി നയം.",
+        "learnMore": "ഇഷ്ടാനുസൃതമാക്കുക",
+        "changeDescription": " "
+      },
+      "save": "സ്വീകരിക്കുക",
+      "consentModal": {
+        "title": "സമ്മത മുൻഗണനകൾ ഇഷ്ടാനുസൃതമാക്കുക",
+        "description": "പേജുകൾക്കിടയിൽ കാര്യക്ഷമമായി നാവിഗേറ്റ് ചെയ്യാനും നിങ്ങളുടെ മുൻഗണനകൾ സംഭരിക്കാനും സാധാരണയായി ഒരു വെബ്സൈറ്റിന്റെ അനുഭവം മെച്ചപ്പെടുത്താനും നിങ്ങളെ സഹായിക്കുന്നതിന് ഞങ്ങൾ കുക്കികൾ ഉപയോഗിക്കുന്നു. എന്നിരുന്നാലും, സ്വകാര്യതയ്ക്കുള്ള നിങ്ങളുടെ അവകാശം ഞങ്ങൾ അംഗീകരിക്കുന്നു, അതിനാൽ ചിലതരം കുക്കികൾ അനുവദിക്കരുതെന്ന് നിങ്ങൾക്ക് തിരഞ്ഞെടുക്കാം. കൂടുതൽ അറിയാനും ഞങ്ങളുടെ സ്ഥിരസ്ഥിതി ക്രമീകരണങ്ങൾ മാറ്റാനും വ്യത്യസ്ത വിഭാഗ തലക്കെട്ടുകളിൽ ക്ലിക്കുചെയ്യുക. ചില തരത്തിലുള്ള കുക്കികൾ തടയുന്നത് സൈറ്റിലെ നിങ്ങളുടെ അനുഭവത്തെ ബാധിച്ചേക്കാമെന്നത് ശ്രദ്ധിക്കുക.",
+        "buttons": {
+          "save": "സ്വീകരിക്കുക",
+          "acceptAll": "എല്ലാം സ്വീകരിക്കുക",
+          "decline": "ഇല്ല (ഒഴിവാക്കുക)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ഇല്ല (ഒഴിവാക്കുക)",
+          "title": "ഇല്ല (ഒഴിവാക്കുക)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "വെബ്സൈറ്റിന്റെ പ്രവർത്തനം മെച്ചപ്പെടുത്തുന്നതിനും ഉപയോക്തൃ അനുഭവം മെച്ചപ്പെടുത്തുന്നതിനും ഞങ്ങൾ ഈ കുക്കികൾ ഉപയോഗിക്കുന്നു. വിവരങ്ങൾക്ക് ലോഗിൻ ഡാറ്റ, പ്രദേശം, ഭാഷ, മെച്ചപ്പെടുത്തിയ ഉള്ളടക്കം എന്നിവ ഉൾപ്പെടാം.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "വ്യക്തിഗതമാക്കിയ പരസ്യങ്ങൾ നൽകുന്നതിനും മാർക്കറ്റിംഗ് കാമ്പെയ്നുകളുടെ ഫലപ്രാപ്തി അളക്കുന്നതിനും ഞങ്ങളുടെ പരസ്യ പങ്കാളികൾ ഈ കുക്കികൾ ഉപയോഗിക്കുന്നു. ഉപയോക്തൃ താൽപ്പര്യങ്ങളും ബ്രൌസിംഗ് പെരുമാറ്റവും അടിസ്ഥാനമാക്കി പ്രസക്തമായ പ്രമോഷനുകൾ നൽകാൻ അവ സഹായിക്കുന്നു.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ഈ വിഭാഗത്തിൽ മുൻകൂട്ടി നിർവചിക്കപ്പെട്ട വിഭാഗങ്ങളുമായി പൊരുത്തപ്പെടാത്തതും എന്നാൽ ചില വെബ്സൈറ്റ് പ്രവർത്തനങ്ങൾക്കോ മെച്ചപ്പെടുത്തലുകൾക്കോ ആവശ്യമായി വന്നേക്കാവുന്ന കുക്കികൾ ഉൾപ്പെടുന്നു.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "mni": {
+      "acceptAll": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ",
+      "accept": "ꯂꯧꯁꯤꯟꯕꯤꯌꯨ",
+      "decline": "ꯂꯩꯇꯦ (ꯑꯣꯞꯠ-ꯑꯥꯎꯠ)",
+      "acceptSelected": "ꯈꯟꯒꯠꯂꯕ ꯑꯁꯤ ꯂꯧꯕꯤꯌꯨ",
+      "ok": "ꯍꯣꯏ (ꯑꯣꯞꯠ-ꯏꯟ)",
+      "consentNotice": {
+        "description": "ꯑꯩꯈꯣꯏꯅ ꯅꯍꯥꯛꯀꯤ ꯂꯅꯥꯏꯕꯨ ꯏꯀꯥꯏ ꯈꯨꯝꯅꯩ ꯑꯩꯈꯣꯏꯅ ꯇꯉꯥꯏꯐꯗꯕ ꯁꯥꯏꯠꯀꯤ ꯃꯊꯧ ꯇꯧꯕ ꯉꯝꯕ, ꯃꯥꯔꯀꯦꯇꯤꯡ, ꯄꯦꯁ ꯭ ꯅꯦꯜꯥꯏꯖꯦꯁꯟ ꯑꯃꯁꯨꯡ ꯑꯦꯅꯥꯂꯤꯇꯤꯛꯁ ꯇꯧꯕ ꯉꯝꯅꯕ ꯀꯨꯀꯤꯁꯤꯡ ꯊꯝꯃꯤ ꯫ \"ꯄꯨꯝꯅꯃꯛ ꯌꯥꯕꯤꯌꯨ\" ꯍꯥꯏꯕ ꯑꯗꯨꯗ ꯅꯝꯗꯨꯅ, ꯅꯍꯥꯛꯅ ꯑꯩꯈꯣꯏꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯁꯤꯖꯤꯟꯅꯕ ꯌꯥꯔꯦ ꯫ ꯅꯍꯥꯛꯅ ꯃꯇꯝ ꯑꯃꯍꯦꯛꯇꯗ ꯅꯍꯥꯛꯀꯤ ꯁꯦꯇꯤꯡꯁ ꯑꯗꯨ ꯍꯣꯡꯗꯣꯛꯄ ꯌꯥꯏ ꯫ ꯀꯨꯀꯤꯒꯤ ꯊꯧꯁꯤꯜ ꯫",
+        "learnMore": "ꯀꯁꯇꯃꯥꯏꯖ ꯇꯧ ꯫",
+        "changeDescription": " "
+      },
+      "save": "ꯂꯧꯁꯤꯟꯕꯤꯌꯨ",
+      "consentModal": {
+        "title": "ꯀꯣꯟꯁꯦꯟꯠ ꯄ ꯭ ꯔꯦꯐꯔꯦꯟꯁꯁꯤꯡ ꯀꯁ ꯭ ꯇꯥꯃꯥꯏꯖ ꯇꯧ",
+        "description": "ꯑꯩꯈꯣꯏꯅ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤ ꯅꯍꯥꯛꯅ ꯆꯦꯐꯣꯡꯁꯤꯡꯒꯤ ꯃꯔꯛꯇ ꯐꯖꯅ ꯆꯠꯄꯗ ꯃꯇꯦꯡ ꯄꯥꯡꯅꯕ, ꯅꯍꯥꯛꯀꯤ ꯄꯥꯝꯖꯕꯁꯤꯡ ꯊꯝꯗꯨꯅ ꯊꯝꯕ, ꯑꯃꯁꯨꯡ ꯃꯍꯧꯁꯥꯅ ꯅꯍꯥꯛꯀꯤ ꯋꯦꯕꯁꯥꯏꯠ ꯑꯃꯒꯤ ꯈꯪ-ꯍꯩꯕ ꯑꯗꯨ ꯐꯒꯠꯍꯟꯕꯗ ꯁꯤꯖꯤꯟꯅꯩ ꯫ ꯑꯗꯨꯝ ꯑꯣꯏꯅꯃꯛ, ꯑꯩꯈꯣꯏꯅ ꯅꯍꯥꯛꯀꯤ ꯂꯅꯥꯏꯒꯤ ꯑꯣꯏꯕ ꯍꯛ ꯑꯗꯨ ꯌꯥꯔꯦ ꯑꯃꯁꯨꯡ ꯃꯔꯝ ꯑꯁꯤꯅ ꯅꯍꯥꯛꯅ ꯃꯈꯜ ꯈꯔꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯌꯥꯍꯟꯗꯅꯕ ꯈꯟꯕ ꯌꯥꯏ ꯫ ꯍꯦꯟꯅ ꯈꯪꯗꯣꯛꯅꯕ ꯑꯃꯁꯨꯡ ꯑꯩꯈꯣꯏꯒꯤ ꯗꯤꯐꯣꯜꯠ ꯁꯦꯇꯤꯡꯁ ꯑꯗꯨ ꯍꯣꯡꯗꯣꯛꯅꯕ ꯇꯣꯉꯥꯟ-ꯇꯣꯉꯥꯟꯕ ꯀꯦꯇꯦꯒꯣꯔꯤꯒꯤ ꯍꯦꯗꯤꯡꯁꯤꯡꯗ ꯅꯝꯃꯨ ꯫ ꯆꯥꯟꯕꯤꯗꯨꯅ ꯆꯦꯛꯁꯤꯟꯕꯤꯌꯨ ꯃꯗꯨꯗꯤ ꯑꯀꯛꯅꯕ ꯃꯈꯜꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯊꯤꯡꯕꯅ ꯅꯍꯥꯛꯀꯤ ꯁꯥꯏꯠ ꯑꯗꯨꯒꯤ ꯈꯪꯍꯧꯗ ꯭ ꯔꯕꯗ ꯑꯀꯥꯏꯕ ꯄꯤꯕ ꯌꯥꯏ ꯫",
+        "buttons": {
+          "save": "ꯂꯧꯁꯤꯟꯕꯤꯌꯨ",
+          "acceptAll": "ꯄꯨꯝꯅꯃꯛ ꯂꯧꯕꯤꯌꯨ",
+          "decline": "ꯂꯩꯇꯦ (ꯑꯣꯞꯠ-ꯑꯥꯎꯠ)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ꯂꯩꯇꯦ (ꯑꯣꯞꯠ-ꯑꯥꯎꯠ)",
+          "title": "ꯂꯩꯇꯦ (ꯑꯣꯞꯠ-ꯑꯥꯎꯠ)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "ꯑꯩꯈꯣꯏꯅ ꯃꯁꯤꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤ ꯋꯦꯕꯁꯥꯏꯠꯀꯤ ꯃꯊꯧ ꯇꯧꯕ ꯉꯝꯕꯒꯤ ꯆꯥꯡ ꯍꯦꯟꯒꯠꯍꯟꯅꯕ ꯑꯃꯁꯨꯡ ꯌꯨꯖꯔꯒꯤ ꯈꯪ-ꯍꯩꯕꯒꯤ ꯐꯤꯕꯝ ꯐꯒꯠꯍꯟꯅꯕ ꯁꯤꯖꯤꯟꯅꯩ ꯫ ꯑꯀꯨꯞꯄ ꯃꯔꯣꯜꯗ ꯂꯣꯒꯏꯟ ꯗꯦꯇꯥ, ꯃꯐꯝ, ꯂꯣꯟ, ꯑꯃꯁꯨꯡ ꯐꯒꯠꯍꯜꯂꯕ ꯃꯆꯥꯛ ꯌꯥꯎꯕ ꯌꯥꯏ ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "ꯃꯁꯤꯒꯤ ꯀꯨꯀꯤꯁꯤꯡ ꯑꯁꯤ ꯑꯩꯈꯣꯏꯒꯤ ꯑꯦꯗꯚꯔꯇꯥꯏꯖꯃꯦꯟ ꯭ ꯇꯒꯤ ꯁꯔꯨꯛ ꯌꯥꯔꯤꯕꯁꯤꯡꯅ ꯂꯅꯥꯏꯒꯤ ꯑꯣꯏꯕ ꯑꯦꯗꯁꯤꯡ ꯄꯤꯅꯕ ꯑꯃꯁꯨꯡ ꯃꯥꯔꯀꯦꯇꯤꯡꯒꯤ ꯈꯣꯡꯖꯪꯁꯤꯡꯒꯤ ꯀꯥꯟꯅꯕꯒꯤ ꯆꯥꯡ ꯂꯦꯞꯊꯣꯛꯅꯕ ꯁꯤꯖꯤꯟꯅꯩ ꯫ ꯃꯈꯣꯏꯅ ꯁꯤꯖꯤꯟꯅꯔꯤꯕ ꯃꯤꯑꯣꯏ ꯑꯗꯨꯒꯤ ꯅꯨꯡꯉꯥꯏꯕ ꯑꯃꯁꯨꯡ ꯌꯦꯡꯕꯒꯤ ꯃꯑꯣꯡ-ꯃꯇꯧꯗ ꯌꯨꯝꯐꯝ ꯑꯣꯏꯕ ꯃꯔꯤ ꯂꯩꯅꯕ ꯄ ꯭ ꯔꯣꯃꯣꯁꯟꯁꯤꯡ ꯄꯤꯕꯗ ꯃꯇꯦꯡ ꯄꯥꯡꯉꯤ ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ꯃꯁꯤꯒꯤ ꯀꯦꯇꯦꯒꯣꯔꯤ ꯑꯁꯤꯗ ꯃꯃꯥꯡꯗ ꯂꯦꯞꯊꯣꯛꯂꯕ ꯀꯦꯇꯦꯒꯣꯔꯤꯁꯤꯡꯗ ꯌꯥꯎꯗꯕ ꯑꯗꯨꯕꯨ ꯑꯀꯛꯅꯕ ꯋꯦꯕꯁꯥꯏꯠꯀꯤ ꯃꯊꯧꯁꯤꯡ ꯅꯠꯇ ꯭ ꯔꯒ ꯐꯒꯠꯍꯟꯅꯕꯒꯤꯗꯃꯛ ꯃꯊꯧ ꯇꯥꯕ ꯌꯥꯕ ꯀꯨꯀꯤꯁꯤꯡ ꯌꯥꯎꯔꯤ ꯫<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "ur": {
+      "acceptAll": "سب کو قبول کریں",
+      "accept": "قبول کریں۔",
+      "decline": "نہیں (آپٹ آؤٹ)",
+      "acceptSelected": "منتخب کردہ کو قبول کریں",
+      "ok": "ہاں (آپٹ ان)",
+      "consentNotice": {
+        "description": "ہم آپ کی رازداری کا احترام کرتے ہیں۔ ہم سائٹ کی ضروری فعالیت کے ساتھ ساتھ مارکیٹنگ، شخصی کاری اور تجزیات کو فعال کرنے کے لیے کوکیز کو محفوظ کرتے ہیں۔ \"سب کو قبول کریں\" پر کلک کرکے، آپ ہمارے کوکیز کے استعمال سے اتفاق کرتے ہیں۔ آپ کسی بھی وقت اپنی ترتیبات تبدیل کر سکتے ہیں۔ کوکی پالیسی۔",
+        "learnMore": "اپنی مرضی کے مطابق بنائیں",
+        "changeDescription": " "
+      },
+      "save": "قبول کریں۔",
+      "consentModal": {
+        "title": "رضامندی کی ترجیحات کو حسب ضرورت بنائیں",
+        "description": "ہم کوکیز کا استعمال آپ کو صفحات کے درمیان موثر طریقے سے نیویگیشن کرنے، اپنی ترجیحات کو محفوظ کرنے اور عام طور پر کسی ویب سائٹ کے اپنے تجربے کو بہتر بنانے میں مدد کرنے کے لیے کرتے ہیں۔ تاہم، ہم آپ کے رازداری کے حق کو تسلیم کرتے ہیں اور اس لیے آپ کچھ قسم کی کوکیز کی اجازت نہ دینے کا انتخاب کر سکتے ہیں۔ مزید جاننے اور ہماری ڈیفالٹ سیٹنگز کو تبدیل کرنے کے لیے مختلف زمرہ کے عنوانات پر کلک کریں۔ براہ کرم نوٹ کریں کہ بعض قسم کی کوکیز کو مسدود کرنا سائٹ کے آپ کے تجربے کو متاثر کر سکتا ہے۔",
+        "buttons": {
+          "save": "قبول کریں۔",
+          "acceptAll": "سب کو قبول کریں",
+          "decline": "نہیں (آپٹ آؤٹ)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "نہیں (آپٹ آؤٹ)",
+          "title": "نہیں (آپٹ آؤٹ)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "ہم ان کوکیز کا استعمال ویب سائٹ کی فعالیت کو بڑھانے اور صارف کے تجربے کو بہتر بنانے کے لیے کرتے ہیں۔ معلومات میں لاگ ان ڈیٹا، خطہ، زبان اور بہتر مواد شامل ہو سکتے ہیں۔<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "یہ کوکیز ہمارے اشتہاری شراکت داروں کے ذریعہ ذاتی اشتہارات کی فراہمی اور مارکیٹنگ کی مہمات کی تاثیر کی پیمائش کے لیے استعمال کی جاتی ہیں۔ وہ صارف کے مفادات اور براؤزنگ رویے کی بنیاد پر متعلقہ پروموشنز فراہم کرنے میں مدد کرتے ہیں۔<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "اس زمرے میں کوکیز شامل ہیں جو پہلے سے طے شدہ زمروں میں فٹ نہیں ہوتی ہیں لیکن ویب سائٹ کی کچھ فعالیتوں یا بہتری کے لیے ضروری ہو سکتی ہیں۔<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "brx": {
+      "acceptAll": "गासिबो नाजाव",
+      "accept": "नाजाव",
+      "decline": "नङा (सायख 'नाय-एंगारनाय)",
+      "acceptSelected": "सायख 'जानायखौ नाजाव",
+      "ok": "नंगौ (सायख 'नाय)",
+      "consentNotice": {
+        "description": "जों नोंनि प्राइभेसिखौ मान होयो जों गोनांथार साइटनि खामानिजों लोगोसे मार्केटिं, गावारि खालामनाय आरो एनालाइटिक्स खालामनो थाखाय कुकिजखौ दोनथुमो। \"गासिबो नाजाव\" आव क्लिक खालामनानै, नों जोंनि कुकिफोरनि बाहायनायखौ गनायो। नोंथाङा जायखिजाया समावनो गावनि सेटिंसखौ सोलायनो हायो। कुकि पलिसि।",
+        "learnMore": "कास्टमाइज खालाम",
+        "changeDescription": " "
+      },
+      "save": "नाजाव",
+      "consentModal": {
+        "title": "गनायथि सायख 'नायफोरखौ कास्टमाइज खालाम",
+        "description": "जों नोंथांखौ पेजफोरनि गेजेराव मोजाङै नेभिगेट खालामनायाव मदद होनो, नोंथांनि गोसो जानायफोरखौ दोनथुमनो आरो सरासनस्रायै नोंथांनि वेबसाइटनि रोंमोनदांथिखौ साबसिन खालामनो थाखाय कुकिफोरखौ बाहायो। जिखिजायामानो, जों नोंनि गावारि मोन्थाइखौ गनायो आरो बेनिखायनो नों माखासे रोखोमनि कुकिसखौ गनायथि होनाङा सायख 'नो हायो। बांसिन मिथिनो आरो जोंनि दिफल्ट सेटिंसखौ सोलायनो थाखाय गुबुन गुबुन थाखोनि हेडिंफोराव क्लिक खालाम। अन्नानै नोजोर हो दि माखासे रोखोमनि कुकिफोरखौ बन्द खालामनाया साइटनि नोंनि रोंमोनदांथिखौ गोहोम खोख्लैनो हागौ।",
+        "buttons": {
+          "save": "नाजाव",
+          "acceptAll": "गासिबो नाजाव",
+          "decline": "नङा (सायख 'नाय-एंगारनाय)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "नङा (सायख 'नाय-एंगारनाय)",
+          "title": "नङा (सायख 'नाय-एंगारनाय)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "जों बे कुकिफोरखौ वेबसाइटनि मावथायखौ बांहोनो आरो बाहायगिरिनि रोंमोनदांथिखौ साबसिन खालामनो बाहायो। फोरमायथियाव लगइननि खारि, ओनसोल, राव आरो बांनाय आयदाफोर थानो हागौ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "बे कुकिफोरखौ जोंनि फोसावथाइ बाहागोआरिफ्रा गावारि फोसावथाइ होनो आरो फोसावथाइ फोसावथायनि गोहोमखौ जखा खालामनो बाहायो। बिसोर बाहायगिरिनि गोसो जानाय आरो ब्राउजिं आखुथायनि सायाव बिथा खालामनानै सोमोन्दो गोनां फोसावथायफोर जगायनो हेफाजाब होयो।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "बे थाखोआ बै कुकिफोरखौ लाफायो जाय सिगां थि खालामनाय थाखोफोराव थाङा नाथाय माखासे वेबसाइटनि खामानि एबा जौगाथायनि थाखाय गोनां जानो हागौ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "mr": {
+      "acceptAll": "सर्व स्वीकारा",
+      "accept": "स्वीकारा",
+      "decline": "नाही (वगळणे)",
+      "acceptSelected": "निवडलेले स्वीकारा",
+      "ok": "होय (पर्याय निवडा)",
+      "consentNotice": {
+        "description": "आम्ही तुमच्या गोपनीयतेचा आदर करतो आम्ही आवश्यक साइट कार्यक्षमता, तसेच विपणन, वैयक्तिकरण आणि विश्लेषण सक्षम करण्यासाठी कुकीज संचयित करतो. \"सर्व स्वीकारा\" वर क्लिक करून, तुम्ही आमच्या कुकीजच्या वापरास संमती देता. तुम्ही कधीही तुमचे सेटिंग बदलू शकता. कुकी धोरण.",
+        "learnMore": "सानुकूलित करा",
+        "changeDescription": " "
+      },
+      "save": "स्वीकारा",
+      "consentModal": {
+        "title": "संमतीची प्राधान्ये सानुकूलित करा",
+        "description": "पृष्ठांदरम्यान कार्यक्षमतेने नेव्हिगेट करण्यात, तुमची प्राधान्ये संचयित करण्यात आणि सामान्यतः वेबसाइटचा तुमचा अनुभव सुधारण्यात मदत करण्यासाठी आम्ही कुकीज वापरतो. तथापि, आम्ही तुमच्या गोपनीयतेच्या अधिकाराची कबुली देतो आणि म्हणूनच तुम्ही काही प्रकारच्या कुकीजला परवानगी न देणे निवडू शकता. अधिक जाणून घेण्यासाठी आणि आपली पूर्वनिर्धारित मांडणी बदलण्यासाठी विविध श्रेणी शीर्षकांवर क्लिक करा. कृपया लक्षात घ्या की विशिष्ट प्रकारच्या कुकीज अवरोधित केल्याने तुमच्या संकेतस्थळावरील अनुभवावर परिणाम होऊ शकतो.",
+        "buttons": {
+          "save": "स्वीकारा",
+          "acceptAll": "सर्व स्वीकारा",
+          "decline": "नाही (वगळणे)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "नाही (वगळणे)",
+          "title": "नाही (वगळणे)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "आम्ही या कुकीज वेबसाइटची कार्यक्षमता वाढविण्यासाठी आणि वापरकर्ता अनुभव सुधारण्यासाठी वापरतो. माहितीमध्ये लॉगिन डेटा, प्रदेश, भाषा आणि वर्धित सामग्री समाविष्ट असू शकते.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "या कुकीज आमच्या जाहिरात भागीदारांद्वारे वैयक्तिकृत जाहिराती देण्यासाठी आणि विपणन मोहिमांची परिणामकारकता मोजण्यासाठी वापरल्या जातात. ते वापरकर्त्याच्या आवडी आणि ब्राउझिंग वर्तनावर आधारित संबंधित जाहिराती प्रदान करण्यात मदत करतात.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "या श्रेणीमध्ये अशा कुकीज समाविष्ट आहेत ज्या पूर्वनिर्धारित श्रेणींमध्ये बसत नाहीत परंतु वेबसाइटच्या विशिष्ट कार्यक्षमता किंवा सुधारणांसाठी आवश्यक असू शकतात.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "or": {
+      "acceptAll": "ସମସ୍ତଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ",
+      "accept": "ଗ୍ରହଣ କରନ୍ତୁ",
+      "decline": "ନା (ଅପ୍ଟ-ଆଉଟ୍)",
+      "acceptSelected": "ମନୋନୀତଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ",
+      "ok": "ହଁ (ଅପ୍ଟ-ଇନ୍)",
+      "consentNotice": {
+        "description": "ଆମେ ଆପଣଙ୍କ ଗୋପନୀୟତାକୁ ସମ୍ମାନ କରୁ, ଆମେ ଅତ୍ୟାବଶ୍ୟକ ସାଇଟ୍ କାର୍ଯ୍ୟକାରିତା ତଥା ମାର୍କେଟିଂ, ବ୍ୟକ୍ତିଗତକରଣ ଏବଂ ବିଶ୍ଳେଷଣକୁ ସକ୍ଷମ କରିବା ପାଇଁ କୁକିଜ୍ ଷ୍ଟୋର୍ କରୁ। \"ସମସ୍ତଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ\" ଉପରେ କ୍ଲିକ୍ କରି, ଆପଣ ଆମର କୁକିଜ୍ ବ୍ୟବହାର ପାଇଁ ରାଜି ହୁଅନ୍ତି। ଆପଣ ଯେକୌଣସି ସମୟରେ ନିଜର ସେଟିଂ ବଦଳାଇ ପାରିବେ। କୁକି ନୀତି।",
+        "learnMore": "ସ୍ୱତନ୍ତ୍ର କରନ୍ତୁ",
+        "changeDescription": " "
+      },
+      "save": "ଗ୍ରହଣ କରନ୍ତୁ",
+      "consentModal": {
+        "title": "ସମ୍ମତି ପସନ୍ଦଗୁଡ଼ିକୁ ସ୍ୱତନ୍ତ୍ର କରନ୍ତୁ",
+        "description": "ଆମେ ଆପଣଙ୍କୁ ପୃଷ୍ଠାଗୁଡ଼ିକ ମଧ୍ୟରେ ଦକ୍ଷତାର ସହ ନେଭିଗେଟ୍ କରିବାରେ, ଆପଣଙ୍କ ପସନ୍ଦକୁ ସଂରକ୍ଷଣ କରିବାରେ ଏବଂ ସାଧାରଣତଃ ଏକ ୱେବ୍ସାଇଟ୍ରେ ଆପଣଙ୍କ ଅଭିଜ୍ଞତାକୁ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରିବାକୁ କୁକିଜ୍ ବ୍ୟବହାର କରୁ। ତଥାପି, ଆମେ ଆପଣଙ୍କ ଗୋପନୀୟତାର ଅଧିକାରକୁ ସ୍ୱୀକାର କରୁ ଏବଂ ତେଣୁ ଆପଣ କିଛି ପ୍ରକାରର କୁକିଜକୁ ଅନୁମତି ନଦେବାକୁ ବାଛିପାରିବେ। ଅଧିକ ଜାଣିବା ପାଇଁ ବିଭିନ୍ନ ବର୍ଗର ଶୀର୍ଷକ ଉପରେ କ୍ଲିକ୍ କରନ୍ତୁ ଏବଂ ଆମର ପୂର୍ବନିର୍ଦ୍ଧାରିତ ସେଟିଂ ବଦଳାନ୍ତୁ। ଦୟାକରି ଧ୍ୟାନ ଦିଅନ୍ତୁ ଯେ ନିର୍ଦ୍ଦିଷ୍ଟ ପ୍ରକାରର କୁକିଜକୁ ଅବରୋଧ କରିବା ସାଇଟର ଆପଣଙ୍କ ଅଭିଜ୍ଞତାକୁ ପ୍ରଭାବିତ କରିପାରେ।",
+        "buttons": {
+          "save": "ଗ୍ରହଣ କରନ୍ତୁ",
+          "acceptAll": "ସମସ୍ତଙ୍କୁ ଗ୍ରହଣ କରନ୍ତୁ",
+          "decline": "ନା (ଅପ୍ଟ-ଆଉଟ୍)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ନା (ଅପ୍ଟ-ଆଉଟ୍)",
+          "title": "ନା (ଅପ୍ଟ-ଆଉଟ୍)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "ୱେବ୍ସାଇଟ କାର୍ଯ୍ୟକାରିତାକୁ ଉନ୍ନତ କରିବା ଏବଂ ବ୍ୟବହାରକାରୀଙ୍କ ଅଭିଜ୍ଞତାକୁ ଉନ୍ନତ କରିବା ପାଇଁ ଆମେ ଏହି କୁକିଜ ବ୍ୟବହାର କରୁ। ସୂଚନା ମଧ୍ୟରେ ଲଗଇନ୍ ତଥ୍ୟ, ଅଞ୍ଚଳ, ଭାଷା ଏବଂ ଉନ୍ନତ ବିଷୟବସ୍ତୁ ଅନ୍ତର୍ଭୁକ୍ତ ହୋଇପାରେ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "ଏହି କୁକିଗୁଡ଼ିକ ଆମର ବିଜ୍ଞାପନ ଅଂଶୀଦାରମାନଙ୍କ ଦ୍ୱାରା ବ୍ୟକ୍ତିଗତ ବିଜ୍ଞାପନ ପ୍ରଦାନ କରିବା ଏବଂ ବିପଣନ ଅଭିଯାନର ପ୍ରଭାବକୁ ମାପିବା ପାଇଁ ବ୍ୟବହାର କରାଯାଇଥାଏ। ସେମାନେ ବ୍ୟବହାରକାରୀଙ୍କ ଆଗ୍ରହ ଏବଂ ବ୍ରାଉଜିଂ ଆଚରଣ ଉପରେ ଆଧାର କରି ପ୍ରାସଙ୍ଗିକ ପ୍ରଚାର ପ୍ରଦାନ କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତି |<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ଏହି ବର୍ଗରେ କୁକିଜ ଅନ୍ତର୍ଭୁକ୍ତ ଅଛି ଯାହା ପୂର୍ବନିର୍ଦ୍ଧାରିତ ବର୍ଗରେ ଖାପ ଖାଏ ନାହିଁ କିନ୍ତୁ ନିର୍ଦ୍ଦିଷ୍ଟ ୱେବସାଇଟ୍ କାର୍ଯ୍ୟକାରିତା କିମ୍ବା ଉନ୍ନତି ପାଇଁ ଆବଶ୍ୟକ ହୋଇପାରେ |<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "as": {
+      "acceptAll": "সকলো গ্ৰহণ কৰক",
+      "accept": "গ্ৰহণ কৰক",
+      "decline": "নাই (অপ্ট-আউট)",
+      "acceptSelected": "নিৰ্বাচিত গ্ৰহণ কৰক",
+      "ok": "হয় (অপ্ট-ইন)",
+      "consentNotice": {
+        "description": "আমি আপোনাৰ গোপনীয়তাক সন্মান কৰোঁ আমি অত্যাৱশ্যকীয় ছাইট কাৰ্য্যকৰীতা, লগতে বিপণন, ব্যক্তিগতকৰণ আৰু বিশ্লেষণ সক্ষম কৰিবলৈ কুকিজ সংৰক্ষণ কৰোঁ। \"সকলো গ্ৰহণ কৰক\" ক্লিক কৰি, আপুনি আমাৰ কুকিজৰ ব্যৱহাৰত সন্মতি প্ৰদান কৰে। আপুনি যিকোনো সময়তে আপোনাৰ ছেটিংছ সলনি কৰিব পাৰে। কুকি নীতি।",
+        "learnMore": "স্বনিৰ্বাচিত কৰক",
+        "changeDescription": " "
+      },
+      "save": "গ্ৰহণ কৰক",
+      "consentModal": {
+        "title": "সন্মতিৰ পছন্দসমূহ স্বনিৰ্বাচিত কৰক",
+        "description": "আমি আপোনাক পৃষ্ঠাসমূহৰ মাজত কাৰ্য্যকৰীভাৱে নেভিগেট কৰাত সহায় কৰিবলৈ, আপোনাৰ পছন্দসমূহ সংৰক্ষণ কৰিবলৈ আৰু সাধাৰণতে ৱেবছাইট এটাৰ আপোনাৰ অভিজ্ঞতা উন্নত কৰিবলৈ কুকিজ ব্যৱহাৰ কৰোঁ। অৱশ্যে, আমি আপোনাৰ গোপনীয়তাৰ অধিকাৰক স্বীকাৰ কৰো আৰু সেয়েহে আপুনি কিছুমান প্ৰকাৰৰ কুকিজৰ অনুমতি নিদিব বিচাৰিব পাৰে। অধিক জানিবলৈ আৰু আমাৰ ডিফল্ট ছেটিংছ সলনি কৰিবলৈ বিভিন্ন শ্ৰেণীৰ শীৰ্ষকত ক্লিক কৰক। অনুগ্ৰহ কৰি মন কৰিব যে কিছুমান নিৰ্দিষ্ট ধৰণৰ কুকিজ ব্লক কৰিলে আপোনাৰ ছাইটৰ অভিজ্ঞতাত প্ৰভাৱ পৰিব পাৰে।",
+        "buttons": {
+          "save": "গ্ৰহণ কৰক",
+          "acceptAll": "সকলো গ্ৰহণ কৰক",
+          "decline": "নাই (অপ্ট-আউট)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "নাই (অপ্ট-আউট)",
+          "title": "নাই (অপ্ট-আউট)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "আমি এই কুকিজসমূহ ৱেবছাইটৰ কাৰ্য্যকৰীতা বৃদ্ধি কৰিবলৈ আৰু ব্যৱহাৰকাৰীৰ অভিজ্ঞতা উন্নত কৰিবলৈ ব্যৱহাৰ কৰো। তথ্যত লগিন তথ্য, অঞ্চল, ভাষা, আৰু উন্নত সমল অন্তৰ্ভুক্ত থাকিব পাৰে।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "এই কুকিজবোৰ আমাৰ বিজ্ঞাপন অংশীদাৰসকলে ব্যক্তিগতকৃত বিজ্ঞাপন প্ৰদান কৰিবলৈ আৰু বিপণন প্ৰচাৰৰ ফলপ্ৰসূতা জুখিবৰ বাবে ব্যৱহাৰ কৰে। তেওঁলোকে ব্যৱহাৰকাৰীৰ আগ্ৰহ আৰু ব্ৰাউজিং আচৰণৰ ওপৰত ভিত্তি কৰি প্ৰাসংগিক প্ৰচাৰ প্ৰদান কৰাত সহায় কৰে।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "এই শ্ৰেণীত কুকিজ অন্তৰ্ভুক্ত থাকে যিবোৰ পূৰ্বনিৰ্ধাৰিত শ্ৰেণীত খাপ নাখায় কিন্তু কিছুমান ৱেবছাইটৰ কাৰ্য্যকৰীতা বা উন্নতিৰ বাবে প্ৰয়োজনীয় হ 'ব পাৰে।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "mai": {
+      "acceptAll": "सभकेँ स्वीकार करू",
+      "accept": "स्वीकार करू",
+      "decline": "नहि (अप्ट-आउट)",
+      "acceptSelected": "चुनल गेलकेँ स्वीकार करू",
+      "ok": "हाँ (ऑप्ट-इन)",
+      "consentNotice": {
+        "description": "हम अहाँक गोपनीयता के सम्मान करैत छी हम आवश्यक साइट कार्यक्षमता के संग-संग विपणन, वैयक्तिकरण आ विश्लेषण के सक्षम करै लेल कुकीज स्टोर करैत छी। \"सभ स्वीकार करू\" पर क्लिक कऽ अहाँ हमर कुकीजक उपयोगक लेल सहमति दैत छी। अहाँ कोनो समय अपन व्यवस्था बदल सकैत छी। कुकी नीति।",
+        "learnMore": "अनुकूलित करू",
+        "changeDescription": " "
+      },
+      "save": "स्वीकार करू",
+      "consentModal": {
+        "title": "सहमति प्राथमिकता केँ अनुकूलित करू",
+        "description": "हम कुकीज के उपयोग अहाँ के पेज के बीच कुशलता सँ नेविगेट करै मे मदद करै लेल करैत छी, अपन प्राथमिकता के स्टोर करै लेल, आर आम तौर पर कोनो वेबसाइट के अपन अनुभव के बेहतर करै लेल। यद्यपि, हम अहाँक गोपनीयताक अधिकारकेँ स्वीकार करैत छी आ एहि लेल अहाँ किछु प्रकारक कुकीजकेँ अनुमति नहि देबाक विकल्प चुन सकैत छी। बेसी जानकारी प्राप्त करबाक लेल विभिन्न श्रेणीक शीर्षक पर क्लिक करू आ अपन पूर्वनिर्धारित सेटिंग्सकेँ बदलू। कृपया ध्यान राखू जे किछु प्रकारक कुकीजकेँ अवरुद्ध करब साइटक अहाँक अनुभवकेँ प्रभावित कऽ सकैत अछि।",
+        "buttons": {
+          "save": "स्वीकार करू",
+          "acceptAll": "सभकेँ स्वीकार करू",
+          "decline": "नहि (अप्ट-आउट)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "नहि (अप्ट-आउट)",
+          "title": "नहि (अप्ट-आउट)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "हमसभ एहि कुकीज सभक उपयोग वेबसाइटक कार्यक्षमता बढ़यबाक लेल आ उपयोगकर्ता अनुभवकेँ सुधारबाक लेल करैत छी। जानकारीमे लॉगइन डेटा, क्षेत्र, भाषा, आ उन्नत सामग्री सम्मिलित भऽ सकैत अछि।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "ई कुकीज सभक विज्ञापन भागीदार द्वारा व्यक्तिगत विज्ञापन देबाक लेल आ विपणन अभियानक प्रभावशीलताकेँ मापबाक लेल उपयोग कयल जाइत अछि। ओ उपयोगकर्ता के रुचि आ ब्राउज़िंग व्यवहार के आधार पर प्रासंगिक प्रचार प्रदान करय मे मदद करैत छैक।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "एहि श्रेणीमे कुकीज शामिल अछि जे पूर्वनिर्धारित श्रेणीमे फिट नहि होइत अछि मुदा वेबसाइटक किछु कार्यक्षमता वा सुधारक लेल आवश्यक भऽ सकैत अछि।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "ta": {
+      "acceptAll": "அனைத்தையும் ஏற்றுக்கொள்ளுங்கள்",
+      "accept": "ஏற்றுக்கொள்",
+      "decline": "இல்லை (விலகல்)",
+      "acceptSelected": "தேர்ந்தெடுக்கப்பட்டவர்களை ஏற்றுக்கொள்ளுங்கள்",
+      "ok": "ஆம் (தேர்ந்தெடுக்கவும்)",
+      "consentNotice": {
+        "description": "அத்தியாவசிய தள செயல்பாடு, சந்தைப்படுத்தல், தனிப்பயனாக்கம் மற்றும் பகுப்பாய்வு ஆகியவற்றை செயல்படுத்த உங்கள் தனியுரிமையை நாங்கள் மதிக்கிறோம். \"அனைத்தையும் ஏற்றுக்கொள்ளுங்கள்\" என்பதைக் கிளிக் செய்வதன் மூலம், நாங்கள் குக்கீகளைப் பயன்படுத்துவதை நீங்கள் ஒப்புக்கொள்கிறீர்கள். நீங்கள் எந்த நேரத்திலும் உங்கள் அமைப்புகளை மாற்றலாம். குக்கீ கொள்கை.",
+        "learnMore": "தனிப்பயனாக்குங்கள்",
+        "changeDescription": " "
+      },
+      "save": "ஏற்றுக்கொள்",
+      "consentModal": {
+        "title": "சம்மத விருப்பங்களைத் தனிப்பயனாக்குங்கள்",
+        "description": "பக்கங்களுக்கு இடையில் திறம்பட செல்லவும், உங்கள் விருப்பங்களை சேமிக்கவும், பொதுவாக ஒரு வலைத்தளத்தைப் பற்றிய உங்கள் அனுபவத்தை மேம்படுத்தவும் குக்கீகளைப் பயன்படுத்துகிறோம். இருப்பினும், உங்கள் தனியுரிமைக்கான உரிமையை நாங்கள் ஒப்புக்கொள்கிறோம், எனவே சில வகையான குக்கீகளை அனுமதிக்க வேண்டாம் என்று நீங்கள் தேர்வு செய்யலாம். மேலும் அறிய பல்வேறு வகை தலைப்புகளைக் கிளிக் செய்து நமது இயல்புநிலை அமைப்புகளை மாற்றவும். சில வகையான குக்கீகளைத் தடுப்பது தளத்தின் உங்கள் அனுபவத்தை பாதிக்கலாம் என்பதை நினைவில் கொள்க.",
+        "buttons": {
+          "save": "ஏற்றுக்கொள்",
+          "acceptAll": "அனைத்தையும் ஏற்றுக்கொள்ளுங்கள்",
+          "decline": "இல்லை (விலகல்)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "இல்லை (விலகல்)",
+          "title": "இல்லை (விலகல்)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "வலைத்தளத்தின் செயல்பாட்டை மேம்படுத்தவும் பயனர் அனுபவத்தை மேம்படுத்தவும் இந்த குக்கீகளைப் பயன்படுத்துகிறோம். தகவல்களில் உள்நுழைவு தரவு, பிராந்தியம், மொழி மற்றும் மேம்படுத்தப்பட்ட உள்ளடக்கம் ஆகியவை அடங்கும்.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "இந்த குக்கீகள் எங்கள் விளம்பர கூட்டாளர்களால் தனிப்பயனாக்கப்பட்ட விளம்பரங்களை வழங்குவதற்கும் சந்தைப்படுத்தல் பிரச்சாரங்களின் செயல்திறனை அளவிடுவதற்கும் பயன்படுத்தப்படுகின்றன. பயனர் ஆர்வங்கள் மற்றும் உலாவல் நடத்தை ஆகியவற்றின் அடிப்படையில் பொருத்தமான விளம்பரங்களை வழங்க அவை உதவுகின்றன.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "இந்த வகை முன் வரையறுக்கப்பட்ட வகைகளுக்குள் பொருந்தாத குக்கீகளை உள்ளடக்கியது, ஆனால் சில வலைத்தள செயல்பாடுகள் அல்லது மேம்பாடுகளுக்கு அவசியமாக இருக்கலாம்.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "sd": {
+      "acceptAll": "سڀنی کی قبول ڪریو",
+      "accept": "قبول ڪریو",
+      "decline": "نہ (آپٽ آئوٽ)",
+      "acceptSelected": "چونڊیل قبول ڪریو",
+      "ok": "ہا (آپٽ-ان)",
+      "consentNotice": {
+        "description": "اسان توہان جی رازداری جو احترام ڪریون ٿا اسان ضروری سائیٽ جی ڪارڪردگی کی فعال ڪرڻ لاء ڪوڪی کی اسٽور ڪریون ٿا، گڏوگڏ مارڪیٽنگ، ذاتی ڪرڻ ۽ تجزیا ڪلڪ ڪندی \"سڀنی کی قبول ڪریو\" توہان اسان جی ڪوڪیز جی استعمال لاء رضامند آہیو توھان پنھنجی سیٽنگن کی ڪنھن بہ وقت تبدیل ڪری سگھو ٿا ڪوڪی پالسیء",
+        "learnMore": "حسب ضرورت ٺاہیو",
+        "changeDescription": " "
+      },
+      "save": "قبول ڪریو",
+      "consentModal": {
+        "title": "رضامندی جی ترجیحن کی ترتیب ڏیو",
+        "description": "اسان استعمال ڪریون ٿا ڪوڪیز توہان جی مدد ڪرڻ لاء پیجز جی وچ ۾ نیویگیشن موثر طریقی سان، توہان جی ترجیحن کی محفوظ ڪرڻ، ۽ عام طئور تی توہان جی ویب سائیٽ جی تجربی کی بہتر بڻائڻ بہرحال، اسان توہان جی رازداری جی حق کی تسلیم ڪریون ٿا ۽ ان ڪری توہان چونڊ ڪری سگہو ٿا تہ ڪجھ قسم جی ڪوڪیز جی اجازت نہ ڏیو وڌیڪ معلوم ڪرڻ ۽ اسان جی ڊیفالٽ سیٽنگن کی تبدیل ڪرڻ لاء مختلف ڪیٽیگری ہیڊنگ تی ڪلڪ ڪریو مہربانی ڪری نوٽ ڪریو تہ ڪجھ قسم جی ڪوڪیز کی بلاڪ ڪرڻ شاید سائیٽ جی توہان جی تجربی کی متاثر ڪری سگہی ٿو",
+        "buttons": {
+          "save": "قبول ڪریو",
+          "acceptAll": "سڀنی کی قبول ڪریو",
+          "decline": "نہ (آپٽ آئوٽ)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "نہ (آپٽ آئوٽ)",
+          "title": "نہ (آپٽ آئوٽ)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "اسان ویب سائیٽ جی ڪارڪردگی کی وڌائڻ ۽ صارف جی تجربی کی بہتر بڻائڻ لاء اہی ڪوڪی استعمال ڪندا آہیون معلومات ۾ لاگ ان ڊیٽا، علائقو، ٻولی، ۽ بہتر مواد شامل ٿی سگہی ٿو<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "اہی ڪوڪیز اسان جی اشتہارن جی ڀائیوارن طرفان ذاتی ڪیل اشتھار پہچائڻ ۽ مارڪیٽنگ مہم جی اثرائتی کی ماپڻ لاء استعمال ڪیون ویندیون آھن اھی مدد ڪن ٿا لاڳاپیل پروموشن مہیا ڪرڻ جی بنیاد تی استعمال ڪندڙ جی مفادن ۽ براؤزنگ رویا<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ھن درجی ۾ ڪوڪیز شامل آھن جیڪی اڳ ۾ مقرر ڪیل قسمن ۾ فٽ نہ ٿیون ٿین پر شاید ویب سائیٽ جی ڪجھ ڪارڪردگی یا بہتری لاء ضروری آھن<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "bn": {
+      "acceptAll": "সব গ্রহণ করুন",
+      "accept": "গ্রহণ করুন",
+      "decline": "না (অপ্ট-আউট)",
+      "acceptSelected": "নির্বাচিতদের গ্রহণ করুন",
+      "ok": "হ্যাঁ (বেছে নিন)",
+      "consentNotice": {
+        "description": "আমরা আপনার গোপনীয়তাকে সম্মান করি আমরা প্রয়োজনীয় সাইট কার্যকারিতা, পাশাপাশি বিপণন, ব্যক্তিগতকরণ এবং বিশ্লেষণ সক্ষম করতে কুকিজ সঞ্চয় করি। \"সবাইকে গ্রহণ করুন\"-এ ক্লিক করে, আপনি আমাদের কুকি ব্যবহারের জন্য সম্মত হন। আপনি যে কোনও সময় আপনার সেটিংস পরিবর্তন করতে পারেন। কুকি নীতি।",
+        "learnMore": "কাস্টমাইজ করুন",
+        "changeDescription": " "
+      },
+      "save": "গ্রহণ করুন",
+      "consentModal": {
+        "title": "সম্মতি পছন্দগুলি কাস্টমাইজ করুন",
+        "description": "আমরা আপনাকে দক্ষতার সাথে পৃষ্ঠাগুলির মধ্যে নেভিগেট করতে, আপনার পছন্দগুলি সংরক্ষণ করতে এবং সাধারণত কোনও ওয়েবসাইটের আপনার অভিজ্ঞতা উন্নত করতে সহায়তা করার জন্য কুকি ব্যবহার করি। যাইহোক, আমরা আপনার গোপনীয়তার অধিকারকে স্বীকার করি এবং তাই আপনি কিছু ধরনের কুকিজ অনুমোদন না করার সিদ্ধান্ত নিতে পারেন। আরও জানতে এবং আমাদের ডিফল্ট সেটিংস পরিবর্তন করতে বিভিন্ন বিভাগের শিরোনামে ক্লিক করুন। দয়া করে মনে রাখবেন যে নির্দিষ্ট ধরনের কুকিজ ব্লক করা আপনার সাইটের অভিজ্ঞতাকে প্রভাবিত করতে পারে।",
+        "buttons": {
+          "save": "গ্রহণ করুন",
+          "acceptAll": "সব গ্রহণ করুন",
+          "decline": "না (অপ্ট-আউট)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "না (অপ্ট-আউট)",
+          "title": "না (অপ্ট-আউট)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "আমরা ওয়েবসাইটের কার্যকারিতা উন্নত করতে এবং ব্যবহারকারীর অভিজ্ঞতা উন্নত করতে এই কুকিগুলি ব্যবহার করি। তথ্যের মধ্যে লগইন তথ্য, অঞ্চল, ভাষা এবং উন্নত বিষয়বস্তু অন্তর্ভুক্ত থাকতে পারে।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "এই কুকিগুলি আমাদের বিজ্ঞাপন অংশীদাররা ব্যক্তিগতকৃত বিজ্ঞাপন সরবরাহ করতে এবং বিপণন প্রচারের কার্যকারিতা পরিমাপ করতে ব্যবহার করে। তারা ব্যবহারকারীর আগ্রহ এবং ব্রাউজিং আচরণের উপর ভিত্তি করে প্রাসঙ্গিক প্রচার প্রদান করতে সহায়তা করে।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "এই বিভাগে এমন কুকিজ রয়েছে যা পূর্বনির্ধারিত বিভাগগুলির সাথে খাপ খায় না তবে নির্দিষ্ট ওয়েবসাইটের কার্যকারিতা বা উন্নতির জন্য প্রয়োজনীয় হতে পারে।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "te": {
+      "acceptAll": "అన్నింటినీ అంగీకరించండి",
+      "accept": "అంగీకరించండి",
+      "decline": "లేదు (నిలిపివేయండి)",
+      "acceptSelected": "ఎంపిక చేయబడినవారిని అంగీకరించండి",
+      "ok": "అవును (ఎంచుకోండి)",
+      "consentNotice": {
+        "description": "మేము మీ గోప్యతను గౌరవిస్తాము, అవసరమైన సైట్ కార్యాచరణను, అలాగే మార్కెటింగ్, వ్యక్తిగతీకరణ మరియు విశ్లేషణలను ప్రారంభించడానికి మేము కుకీలను నిల్వ చేస్తాము. \"అందరినీ అంగీకరించండి\" పై క్లిక్ చేయడం ద్వారా, మీరు మా కుకీల వినియోగానికి అంగీకరిస్తారు. మీరు ఎప్పుడైనా మీ సెట్టింగులను మార్చుకోవచ్చు. కుకీ విధానం.",
+        "learnMore": "అనుకూలీకరించండి",
+        "changeDescription": " "
+      },
+      "save": "అంగీకరించండి",
+      "consentModal": {
+        "title": "సమ్మతి ప్రాధాన్యతలను అనుకూలీకరించండి",
+        "description": "పేజీల మధ్య సమర్థవంతంగా నావిగేట్ చేయడానికి, మీ ప్రాధాన్యతలను నిల్వ చేయడానికి మరియు సాధారణంగా వెబ్సైట్ యొక్క మీ అనుభవాన్ని మెరుగుపరచడానికి మేము కుకీలను ఉపయోగిస్తాము. అయితే, మీ గోప్యత హక్కును మేము గుర్తించాము, అందువల్ల మీరు కొన్ని రకాల కుకీలను అనుమతించకూడదని ఎంచుకోవచ్చు. మరింత తెలుసుకోవడానికి మరియు మా డిఫాల్ట్ సెట్టింగులను మార్చడానికి వివిధ వర్గ శీర్షికలపై క్లిక్ చేయండి. కొన్ని రకాల కుకీలను నిరోధించడం సైట్ యొక్క మీ అనుభవాన్ని ప్రభావితం చేస్తుందని దయచేసి గమనించండి.",
+        "buttons": {
+          "save": "అంగీకరించండి",
+          "acceptAll": "అన్నింటినీ అంగీకరించండి",
+          "decline": "లేదు (నిలిపివేయండి)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "లేదు (నిలిపివేయండి)",
+          "title": "లేదు (నిలిపివేయండి)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "వెబ్సైట్ కార్యాచరణను మెరుగుపరచడానికి మరియు వినియోగదారు అనుభవాన్ని మెరుగుపరచడానికి మేము ఈ కుకీలను ఉపయోగిస్తాము. సమాచారంలో లాగిన్ డేటా, ప్రాంతం, భాష మరియు మెరుగైన కంటెంట్ ఉండవచ్చు.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "ఈ కుకీలను మా ప్రకటనల భాగస్వాములు వ్యక్తిగతీకరించిన ప్రకటనలను అందించడానికి మరియు మార్కెటింగ్ ప్రచారాల ప్రభావాన్ని కొలవడానికి ఉపయోగిస్తారు. వినియోగదారు ఆసక్తులు మరియు బ్రౌజింగ్ ప్రవర్తన ఆధారంగా సంబంధిత ప్రమోషన్లను అందించడానికి అవి సహాయపడతాయి.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ఈ వర్గం ముందుగా నిర్వచించిన వర్గాలకు సరిపోని కుకీలను కలిగి ఉంటుంది, కానీ కొన్ని వెబ్సైట్ కార్యాచరణలు లేదా మెరుగుదలలకు అవసరం కావచ్చు.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "gu": {
+      "acceptAll": "બધા સ્વીકારો",
+      "accept": "સ્વીકારો",
+      "decline": "ના (નાપસંદ)",
+      "acceptSelected": "પસંદ કરેલ સ્વીકારો",
+      "ok": "હા (ઓપ્ટ-ઇન)",
+      "consentNotice": {
+        "description": "અમે તમારી ગોપનીયતાનો આદર કરીએ છીએ અમે આવશ્યક સાઇટ કાર્યક્ષમતા, તેમજ માર્કેટિંગ, વ્યક્તિગતકરણ અને વિશ્લેષણને સક્ષમ કરવા માટે કૂકીઝ સંગ્રહિત કરીએ છીએ. \"બધા સ્વીકારો\" પર ક્લિક કરીને, તમે અમારા કૂકીઝના ઉપયોગ માટે સંમતિ આપો છો. તમે કોઈપણ સમયે તમારી સેટિંગ્સ બદલી શકો છો. કૂકી નીતિ.",
+        "learnMore": "કસ્ટમાઇઝ કરો",
+        "changeDescription": " "
+      },
+      "save": "સ્વીકારો",
+      "consentModal": {
+        "title": "સંમતિ પસંદગીઓને કસ્ટમાઇઝ કરો",
+        "description": "અમે તમને પૃષ્ઠો વચ્ચે અસરકારક રીતે નેવિગેટ કરવામાં, તમારી પસંદગીઓને સંગ્રહિત કરવામાં અને સામાન્ય રીતે વેબસાઇટના તમારા અનુભવને સુધારવામાં મદદ કરવા માટે કૂકીઝનો ઉપયોગ કરીએ છીએ. જો કે, અમે તમારા ગોપનીયતાના અધિકારને સ્વીકારીએ છીએ અને તેથી તમે અમુક પ્રકારની કૂકીઝને મંજૂરી ન આપવાનું પસંદ કરી શકો છો. વધુ જાણવા અને આપણી મૂળભૂત સેટિંગ્સ બદલવા માટે વિવિધ શ્રેણીના શીર્ષકો પર ક્લિક કરો. મહેરબાની કરીને નોંધ કરો કે અમુક પ્રકારની કૂકીઝને અવરોધિત કરવાથી સાઇટના તમારા અનુભવને અસર થઈ શકે છે.",
+        "buttons": {
+          "save": "સ્વીકારો",
+          "acceptAll": "બધા સ્વીકારો",
+          "decline": "ના (નાપસંદ)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ના (નાપસંદ)",
+          "title": "ના (નાપસંદ)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "અમે આ કૂકીઝનો ઉપયોગ વેબસાઇટની કાર્યક્ષમતા વધારવા અને વપરાશકર્તા અનુભવને સુધારવા માટે કરીએ છીએ. માહિતીમાં લૉગિન ડેટા, પ્રદેશ, ભાષા અને ઉન્નત સામગ્રી શામેલ હોઈ શકે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "આ કૂકીઝનો ઉપયોગ અમારા જાહેરાત ભાગીદારો દ્વારા વ્યક્તિગત જાહેરાતો પહોંચાડવા અને માર્કેટિંગ ઝુંબેશની અસરકારકતાને માપવા માટે થાય છે. તેઓ વપરાશકર્તાની રુચિઓ અને બ્રાઉઝિંગ વર્તણૂકના આધારે સંબંધિત પ્રચાર પ્રદાન કરવામાં મદદ કરે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "આ શ્રેણીમાં એવી કૂકીઝનો સમાવેશ થાય છે જે પૂર્વવ્યાખ્યાયિત શ્રેણીઓમાં બંધબેસતી નથી પરંતુ ચોક્કસ વેબસાઇટ કાર્યક્ષમતાઓ અથવા સુધારાઓ માટે જરૂરી હોઈ શકે છે.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "kn": {
+      "acceptAll": "ಎಲ್ಲವನ್ನೂ ಸ್ವೀಕರಿಸಿ",
+      "accept": "ಸ್ವೀಕರಿಸಿ",
+      "decline": "ಇಲ್ಲ (ಆಯ್ಕೆಯಿಂದ ಹೊರಗುಳಿಯುವುದು)",
+      "acceptSelected": "ಆಯ್ಕೆಯಾದವರನ್ನು ಸ್ವೀಕರಿಸಿ",
+      "ok": "ಹೌದು (ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳಿ)",
+      "consentNotice": {
+        "description": "ನಿಮ್ಮ ಗೌಪ್ಯತೆಯನ್ನು ನಾವು ಗೌರವಿಸುತ್ತೇವೆ, ಅಗತ್ಯವಾದ ಸೈಟ್ ಕಾರ್ಯವನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು, ಹಾಗೆಯೇ ಮಾರ್ಕೆಟಿಂಗ್, ವೈಯಕ್ತೀಕರಣ ಮತ್ತು ವಿಶ್ಲೇಷಣೆಗಳನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ನಾವು ಕುಕೀಗಳನ್ನು ಸಂಗ್ರಹಿಸುತ್ತೇವೆ. \"ಎಲ್ಲರನ್ನೂ ಸ್ವೀಕರಿಸಿ\" ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ, ನೀವು ನಮ್ಮ ಕುಕೀಗಳ ಬಳಕೆಯನ್ನು ಒಪ್ಪುತ್ತೀರಿ. ನೀವು ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಬಹುದು. ಕುಕೀ ನೀತಿ.",
+        "learnMore": "ಕಸ್ಟಮೈಸ್ ಮಾಡಿ",
+        "changeDescription": " "
+      },
+      "save": "ಸ್ವೀಕರಿಸಿ",
+      "consentModal": {
+        "title": "ಒಪ್ಪಿಗೆಯ ಆದ್ಯತೆಗಳನ್ನು ಕಸ್ಟಮೈಸ್ ಮಾಡಿ",
+        "description": "ಪುಟಗಳ ನಡುವೆ ಪರಿಣಾಮಕಾರಿಯಾಗಿ ನ್ಯಾವಿಗೇಟ್ ಮಾಡಲು, ನಿಮ್ಮ ಆದ್ಯತೆಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ಮತ್ತು ಸಾಮಾನ್ಯವಾಗಿ ವೆಬ್ಸೈಟ್ನ ನಿಮ್ಮ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ನಾವು ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತೇವೆ. ಆದಾಗ್ಯೂ, ನಿಮ್ಮ ಗೌಪ್ಯತೆಯ ಹಕ್ಕನ್ನು ನಾವು ಅಂಗೀಕರಿಸುತ್ತೇವೆ ಮತ್ತು ಆದ್ದರಿಂದ ನೀವು ಕೆಲವು ರೀತಿಯ ಕುಕೀಗಳನ್ನು ಅನುಮತಿಸದಿರಲು ಆಯ್ಕೆ ಮಾಡಬಹುದು. ಹೆಚ್ಚು ತಿಳಿಯಲು ಮತ್ತು ನಮ್ಮ ಪೂರ್ವನಿಯೋಜಿತ ಸೆಟ್ಟಿಂಗ್ಗಳನ್ನು ಬದಲಾಯಿಸಲು ವಿವಿಧ ವರ್ಗದ ಶೀರ್ಷಿಕೆಗಳ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡಿ. ಕೆಲವು ರೀತಿಯ ಕುಕೀಗಳನ್ನು ನಿರ್ಬಂಧಿಸುವುದರಿಂದ ಸೈಟ್ನ ನಿಮ್ಮ ಅನುಭವದ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರಬಹುದು ಎಂಬುದನ್ನು ದಯವಿಟ್ಟು ಗಮನಿಸಿ.",
+        "buttons": {
+          "save": "ಸ್ವೀಕರಿಸಿ",
+          "acceptAll": "ಎಲ್ಲವನ್ನೂ ಸ್ವೀಕರಿಸಿ",
+          "decline": "ಇಲ್ಲ (ಆಯ್ಕೆಯಿಂದ ಹೊರಗುಳಿಯುವುದು)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ಇಲ್ಲ (ಆಯ್ಕೆಯಿಂದ ಹೊರಗುಳಿಯುವುದು)",
+          "title": "ಇಲ್ಲ (ಆಯ್ಕೆಯಿಂದ ಹೊರಗುಳಿಯುವುದು)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "ಜಾಲತಾಣದ ಕಾರ್ಯಕ್ಷಮತೆಯನ್ನು ಹೆಚ್ಚಿಸಲು ಮತ್ತು ಬಳಕೆದಾರರ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ನಾವು ಈ ಕುಕೀಗಳನ್ನು ಬಳಸುತ್ತೇವೆ. ಮಾಹಿತಿಯು ಲಾಗಿನ್ ದತ್ತಾಂಶ, ಪ್ರದೇಶ, ಭಾಷೆ ಮತ್ತು ವರ್ಧಿತ ವಿಷಯವನ್ನು ಒಳಗೊಂಡಿರಬಹುದು.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "ಈ ಕುಕೀಗಳನ್ನು ನಮ್ಮ ಜಾಹೀರಾತು ಪಾಲುದಾರರು ವೈಯಕ್ತಿಕಗೊಳಿಸಿದ ಜಾಹೀರಾತುಗಳನ್ನು ನೀಡಲು ಮತ್ತು ಮಾರ್ಕೆಟಿಂಗ್ ಅಭಿಯಾನಗಳ ಪರಿಣಾಮಕಾರಿತ್ವವನ್ನು ಅಳೆಯಲು ಬಳಸುತ್ತಾರೆ. ಬಳಕೆದಾರರ ಆಸಕ್ತಿಗಳು ಮತ್ತು ಬ್ರೌಸಿಂಗ್ ನಡವಳಿಕೆಯ ಆಧಾರದ ಮೇಲೆ ಸಂಬಂಧಿತ ಪ್ರಚಾರಗಳನ್ನು ಒದಗಿಸಲು ಅವು ಸಹಾಯ ಮಾಡುತ್ತವೆ.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ಈ ವರ್ಗವು ಪೂರ್ವನಿರ್ಧರಿತ ವರ್ಗಗಳಿಗೆ ಹೊಂದಿಕೆಯಾಗದ ಆದರೆ ಕೆಲವು ಜಾಲತಾಣದ ಕಾರ್ಯಗಳು ಅಥವಾ ಸುಧಾರಣೆಗಳಿಗೆ ಅಗತ್ಯವಾಗಬಹುದಾದ ಕುಕೀಗಳನ್ನು ಒಳಗೊಂಡಿದೆ.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "ne": {
+      "acceptAll": "सबै स्वीकार गर्नुहोस्",
+      "accept": "स्वीकार गर्नुहोस्",
+      "decline": "होइन (अप्ट-आउट)",
+      "acceptSelected": "चुनिएको स्वीकार गर्नुहोस्",
+      "ok": "हो (अप्ट-इन)",
+      "consentNotice": {
+        "description": "हामी तपाईंको गोपनीयतालाई सम्मान गर्दछौं हामी आवश्यक साइट कार्यक्षमता, साथै मार्केटिङ, निजीकरण र विश्लेषण सक्षम गर्न कुकीहरू भण्डार गर्दछौं। \"सबै स्वीकार गर्नुहोस्\" मा क्लिक गरेर, तपाईं हाम्रो कुकीजको प्रयोगमा सहमत हुनुहुन्छ। तपाईँले कुनै पनि समयमा आफ्नो सेटिङहरू परिवर्तन गर्न सक्नुहुन्छ। कुकी नीति।",
+        "learnMore": "अनुकूलित गर्नुहोस्",
+        "changeDescription": " "
+      },
+      "save": "स्वीकार गर्नुहोस्",
+      "consentModal": {
+        "title": "सहमति प्राथमिकताहरू अनुकूलित गर्नुहोस्",
+        "description": "हामी तपाईंलाई पृष्ठहरू बिच कुशलतापूर्वक नेभिगेट गर्न, तपाईंको प्राथमिकताहरू भण्डारण गर्न, र सामान्यतया वेबसाइटको तपाईंको अनुभव सुधार गर्न मद्दत गर्न कुकीहरू प्रयोग गर्दछौं। यद्यपि, हामी तपाईँको गोपनीयताको अधिकारलाई स्वीकार गर्दछौँ र त्यसैले तपाईँले केही प्रकारका कुकीजहरूलाई अनुमति नदिन छनौट गर्न सक्नुहुन्छ। थप पत्ता लगाउन र हाम्रो पूर्वनिर्धारित सेटिङहरू परिवर्तन गर्न विभिन्न श्रेणी शीर्षकहरूमा क्लिक गर्नुहोस्। कृपया ध्यान दिनुहोस् कि केही प्रकारका कुकीहरू अवरुद्ध गर्नाले साइटको तपाईंको अनुभवलाई असर गर्न सक्छ।",
+        "buttons": {
+          "save": "स्वीकार गर्नुहोस्",
+          "acceptAll": "सबै स्वीकार गर्नुहोस्",
+          "decline": "होइन (अप्ट-आउट)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "होइन (अप्ट-आउट)",
+          "title": "होइन (अप्ट-आउट)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "हामी यी कुकीहरू वेबसाइट कार्यक्षमता बढाउन र प्रयोगकर्ता अनुभव सुधार गर्न प्रयोग गर्दछौं। जानकारीले लगइन डेटा, क्षेत्र, भाषा, र उन्नत सामग्री समावेश गर्न सक्छ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "यी कुकीहरू हाम्रा विज्ञापन साझेदारहरूद्वारा व्यक्तिगत विज्ञापनहरू वितरण गर्न र मार्केटिङ अभियानहरूको प्रभावकारिता मापन गर्न प्रयोग गरिन्छ। तिनीहरूले प्रयोगकर्ता रुचि र ब्राउजिङ व्यवहारको आधारमा सान्दर्भिक पदोन्नतिहरू प्रदान गर्न मद्दत गर्छन्।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "यस श्रेणीले कुकीहरू समावेश गर्दछ जुन पूर्वनिर्धारित कोटीहरूमा फिट हुँदैन तर निश्चित वेबसाइट प्रकार्यहरू वा सुधारहरूका लागि आवश्यक हुन सक्छ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "hi": {
+      "acceptAll": "सभी को स्वीकार करें",
+      "accept": "स्वीकार करें",
+      "decline": "नहीं (ऑप्ट-आउट)",
+      "acceptSelected": "चयनित को स्वीकार करें",
+      "ok": "हाँ (ऑप्ट-इन)",
+      "consentNotice": {
+        "description": "हम आपकी गोपनीयता का सम्मान करते हैं हम आवश्यक साइट कार्यक्षमता के साथ-साथ विपणन, वैयक्तिकरण और विश्लेषण को सक्षम करने के लिए कुकीज़ संग्रहीत करते हैं। \"सभी को स्वीकार करें\" पर क्लिक करके, आप कुकीज़ के हमारे उपयोग के लिए सहमत हैं। आप किसी भी समय अपनी सेटिंग बदल सकते हैं। कुकी नीति।",
+        "learnMore": "अनुकूलित करें",
+        "changeDescription": " "
+      },
+      "save": "स्वीकार करें",
+      "consentModal": {
+        "title": "सहमति वरीयताएँ अनुकूलित करें",
+        "description": "हम कुकीज़ का उपयोग आपको पृष्ठों के बीच कुशलता से नेविगेट करने, आपकी प्राथमिकताओं को संग्रहीत करने और आम तौर पर किसी वेबसाइट के आपके अनुभव को बेहतर बनाने में मदद करने के लिए करते हैं। हालाँकि, हम आपकी गोपनीयता के अधिकार को स्वीकार करते हैं और इसलिए आप कुछ प्रकार की कुकीज़ की अनुमति नहीं दे सकते हैं। अधिक जानने के लिए विभिन्न श्रेणी शीर्षकों पर क्लिक करें और हमारी डिफ़ॉल्ट सेटिंग्स को बदलें। कृपया ध्यान दें कि कुछ प्रकार की कुकीज़ को अवरुद्ध करने से साइट का आपका अनुभव प्रभावित हो सकता है।",
+        "buttons": {
+          "save": "स्वीकार करें",
+          "acceptAll": "सभी को स्वीकार करें",
+          "decline": "नहीं (ऑप्ट-आउट)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "नहीं (ऑप्ट-आउट)",
+          "title": "नहीं (ऑप्ट-आउट)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "हम इन कुकीज़ का उपयोग वेबसाइट की कार्यक्षमता बढ़ाने और उपयोगकर्ता अनुभव को बेहतर बनाने के लिए करते हैं। जानकारी में लॉगिन डेटा, क्षेत्र, भाषा और उन्नत सामग्री शामिल हो सकती है।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "इन कुकीज़ का उपयोग हमारे विज्ञापन भागीदारों द्वारा व्यक्तिगत विज्ञापन देने और विपणन अभियानों की प्रभावशीलता को मापने के लिए किया जाता है। वे उपयोगकर्ता की रुचियों और ब्राउज़िंग व्यवहार के आधार पर प्रासंगिक प्रचार प्रदान करने में मदद करते हैं।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "इस श्रेणी में ऐसी कुकीज़ शामिल हैं जो पूर्वनिर्धारित श्रेणियों में फिट नहीं होती हैं, लेकिन कुछ वेबसाइट कार्यक्षमताओं या सुधारों के लिए आवश्यक हो सकती हैं।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "gom": {
+      "acceptAll": "सगळें मान्य कर",
+      "accept": "स्विकार कर",
+      "decline": "ना (अप्ट-आउट)",
+      "acceptSelected": "वेंचून घेतिल्लें मान्य कर",
+      "ok": "हय (ऑप्ट-इन)",
+      "consentNotice": {
+        "description": "आमी तुमच्या गुप्ततायेचो आदर करतात आमी गरजेच्यो संकेतथळ कार्यक्षमताय, तशेंच विपणन, वैयक्तीकरण आनी विश्लेशण सक्षम करपा खातीर कुकीज सांठोवन दवरतात. \"सगळे मान्य करात\" क्लिक केल्यार, तुमी आमचे कुकीज वापरपाक मान्यताय दितात. तुमी खंयच्याय वेळार तुमची सेटिंग बदलूंक शकतात. कुकी धोरण.",
+        "learnMore": "कस्टमायझ करात",
+        "changeDescription": " "
+      },
+      "save": "स्विकार कर",
+      "consentModal": {
+        "title": "संमतीची पसंती सानुकूल करात",
+        "description": "पानां मदीं कुशळटायेन नेव्हिगेट करपाक, तुमची पसंती सांठोवन दवरपाक आनी सादारणपणान संकेतथळाचो तुमचो अणभव सुदारपाक आमी कुकीज वापरतात. पूण, आमी तुज्या खाजगीपणाच्या अधिकाराची मान्यताय दितात आनी देखून तूं कांय प्रकारच्या कुकीजांक परवानगी दिना अशें निवडूंक शकता. चड सोदून काडपाक आनी आमची पूर्वनिर्धारीत मांडणी बदलपाक वेगवेगळ्या श्रेणीच्या शीर्षकांचेर क्लिक करात. उपकार करून लक्षांत घेयात की कांय प्रकारच्या कुकीज आडावपाचो परिणाम तुमच्या सायटीच्या अणभवाचेर जावं येता.",
+        "buttons": {
+          "save": "स्विकार कर",
+          "acceptAll": "सगळें मान्य कर",
+          "decline": "ना (अप्ट-आउट)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ना (अप्ट-आउट)",
+          "title": "ना (अप्ट-आउट)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "संकेतथळाची कार्यक्षमताय वाडोवपा खातीर आनी वापरप्याचो अणभव सुदारपा खातीर आमी ह्यो कुकीज वापरतात. म्हायतींत लॉगीन डेटा, प्रदेश, भास, आनी वर्धित सामुग्री आसूं येता.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "हे कुकीज आमचे जायरात भागीदार वैयक्तीक जायराती दिवपा खातीर आनी विपणन मोहिमांची परिणामकारकता मेजपा खातीर वापरतात. वापरप्याची आवड आनी ब्राउझिंग वेव्हाराचेर आदारून संबंदीत बडटी दिवपाक ते मदत करतात.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ह्या श्रेणींत कुकीज आसतात ज्यो पूर्वनिर्धारित श्रेणींत बसनात पूण कांय संकेतथळाची कार्यक्षमताय वा सुदारणां खातीर गरजेच्यो आसूं येतात.<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "pa": {
+      "acceptAll": "ਸਭ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ",
+      "accept": "ਸਵੀਕਾਰ ਕਰੋ",
+      "decline": "ਨਹੀਂ (ਔਪਟ-ਆਊਟ)",
+      "acceptSelected": "ਚੁਣੇ ਹੋਏ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ",
+      "ok": "ਹਾਂ (ਆਪਟ-ਇਨ)",
+      "consentNotice": {
+        "description": "ਅਸੀਂ ਤੁਹਾਡੀ ਗੋਪਨੀਯਤਾ ਦਾ ਸਨਮਾਨ ਕਰਦੇ ਹਾਂ ਅਸੀਂ ਜ਼ਰੂਰੀ ਸਾਈਟ ਕਾਰਜਕੁਸ਼ਲਤਾ ਦੇ ਨਾਲ ਨਾਲ ਮਾਰਕੀਟਿੰਗ, ਵਿਅਕਤੀਗਤਕਰਨ ਅਤੇ ਵਿਸ਼ਲੇਸ਼ਣ ਨੂੰ ਸਮਰੱਥ ਕਰਨ ਲਈ ਕੂਕੀਜ਼ ਨੂੰ ਸਟੋਰ ਕਰਦੇ ਹਾਂ। \"ਸਭ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ\" ਉੱਤੇ ਕਲਿਕ ਕਰਕੇ, ਤੁਸੀਂ ਸਾਡੀਆਂ ਕੂਕੀਜ਼ ਦੀ ਵਰਤੋਂ ਲਈ ਸਹਿਮਤੀ ਦਿੰਦੇ ਹੋ। ਤੁਸੀਂ ਕਿਸੇ ਵੀ ਸਮੇਂ ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲ ਸਕਦੇ ਹੋ। ਕੂਕੀ ਨੀਤੀ.",
+        "learnMore": "ਅਨੁਕੂਲਿਤ ਕਰੋ",
+        "changeDescription": " "
+      },
+      "save": "ਸਵੀਕਾਰ ਕਰੋ",
+      "consentModal": {
+        "title": "ਸਹਿਮਤੀ ਤਰਜੀਹਾਂ ਨੂੰ ਅਨੁਕੂਲਿਤ ਕਰੋ",
+        "description": "ਅਸੀਂ ਪੰਨਿਆਂ ਵਿਚਕਾਰ ਕੁਸ਼ਲਤਾ ਨਾਲ ਨੈਵੀਗੇਟ ਕਰਨ, ਤੁਹਾਡੀਆਂ ਤਰਜੀਹਾਂ ਨੂੰ ਸੰਭਾਲਣ ਅਤੇ ਆਮ ਤੌਰ 'ਤੇ ਕਿਸੇ ਵੈੱਬਸਾਈਟ ਦੇ ਤੁਹਾਡੇ ਤਜ਼ਰਬੇ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਨ ਲਈ ਕੂਕੀਜ਼ ਦੀ ਵਰਤੋਂ ਕਰਦੇ ਹਾਂ। ਹਾਲਾਂਕਿ, ਅਸੀਂ ਤੁਹਾਡੇ ਗੋਪਨੀਯਤਾ ਦੇ ਅਧਿਕਾਰ ਨੂੰ ਸਵੀਕਾਰ ਕਰਦੇ ਹਾਂ ਅਤੇ ਇਸ ਲਈ ਤੁਸੀਂ ਕੁੱਝ ਕਿਸਮਾਂ ਦੀਆਂ ਕੂਕੀਜ਼ ਦੀ ਆਗਿਆ ਨਾ ਦੇਣ ਦੀ ਚੋਣ ਕਰ ਸਕਦੇ ਹੋ। ਹੋਰ ਜਾਣਨ ਅਤੇ ਸਾਡੀਆਂ ਡਿਫਾਲਟ ਸੈਟਿੰਗਾਂ ਨੂੰ ਬਦਲਣ ਲਈ ਵੱਖ-ਵੱਖ ਸ਼੍ਰੇਣੀ ਸਿਰਲੇਖਾਂ 'ਤੇ ਕਲਿੱਕ ਕਰੋ। ਕਿਰਪਾ ਕਰਕੇ ਨੋਟ ਕਰੋ ਕਿ ਕੁੱਝ ਕਿਸਮਾਂ ਦੀਆਂ ਕੂਕੀਜ਼ ਨੂੰ ਰੋਕਣਾ ਸਾਈਟ ਦੇ ਤੁਹਾਡੇ ਤਜ਼ਰਬੇ ਨੂੰ ਪ੍ਰਭਾਵਤ ਕਰ ਸਕਦਾ ਹੈ।",
+        "buttons": {
+          "save": "ਸਵੀਕਾਰ ਕਰੋ",
+          "acceptAll": "ਸਭ ਨੂੰ ਸਵੀਕਾਰ ਕਰੋ",
+          "decline": "ਨਹੀਂ (ਔਪਟ-ਆਊਟ)"
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "ਨਹੀਂ (ਔਪਟ-ਆਊਟ)",
+          "title": "ਨਹੀਂ (ਔਪਟ-ਆਊਟ)"
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "ਅਸੀਂ ਇਨ੍ਹਾਂ ਕੂਕੀਜ਼ ਦੀ ਵਰਤੋਂ ਵੈੱਬਸਾਈਟ ਦੀ ਕਾਰਜਕੁਸ਼ਲਤਾ ਨੂੰ ਵਧਾਉਣ ਅਤੇ ਉਪਭੋਗਤਾ ਅਨੁਭਵ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਕਰਦੇ ਹਾਂ। ਜਾਣਕਾਰੀ ਵਿੱਚ ਲੌਗਇਨ ਡੇਟਾ, ਖੇਤਰ, ਭਾਸ਼ਾ ਅਤੇ ਵਧੀ ਹੋਈ ਸਮੱਗਰੀ ਸ਼ਾਮਲ ਹੋ ਸਕਦੀ ਹੈ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "ਇਹ ਕੂਕੀਜ਼ ਸਾਡੇ ਵਿਗਿਆਪਨ ਭਾਈਵਾਲਾਂ ਦੁਆਰਾ ਵਿਅਕਤੀਗਤ ਵਿਗਿਆਪਨ ਪ੍ਰਦਾਨ ਕਰਨ ਅਤੇ ਮਾਰਕੀਟਿੰਗ ਮੁਹਿੰਮਾਂ ਦੀ ਪ੍ਰਭਾਵਸ਼ੀਲਤਾ ਨੂੰ ਮਾਪਣ ਲਈ ਵਰਤੀਆਂ ਜਾਂਦੀਆਂ ਹਨ। ਉਹ ਉਪਭੋਗਤਾ ਦੀਆਂ ਰੁਚੀਆਂ ਅਤੇ ਬ੍ਰਾਊਜ਼ਿੰਗ ਵਿਵਹਾਰ ਦੇ ਅਧਾਰ ਤੇ ਢੁਕਵੀਂ ਤਰੱਕੀ ਪ੍ਰਦਾਨ ਕਰਨ ਵਿੱਚ ਸਹਾਇਤਾ ਕਰਦੇ ਹਨ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "ਇਸ ਸ਼੍ਰੇਣੀ ਵਿੱਚ ਕੂਕੀਜ਼ ਸ਼ਾਮਲ ਹਨ ਜੋ ਪਹਿਲਾਂ ਤੋਂ ਪ੍ਰਭਾਸ਼ਿਤ ਸ਼੍ਰੇਣੀਆਂ ਵਿੱਚ ਫਿੱਟ ਨਹੀਂ ਹੁੰਦੀਆਂ ਪਰ ਕੁਝ ਵੈੱਬਸਾਈਟ ਕਾਰਜਕੁਸ਼ਲਤਾ ਜਾਂ ਸੁਧਾਰਾਂ ਲਈ ਜ਼ਰੂਰੀ ਹੋ ਸਕਦੀਆਂ ਹਨ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
+      }
+    },
+    "sa": {
+      "acceptAll": "सर्वान् स्वीकुरुत",
+      "accept": "स्वीकरोतु",
+      "decline": "न (Opt-out) ९.",
+      "acceptSelected": "चयनितं स्वीकुरुत",
+      "ok": "हाँ (Opt-in) ९.",
+      "consentNotice": {
+        "description": "वयं भवतः गोपनीयतायाः सम्मानं कुर्मः वयं कुकीजं संगृह्णामः यत् आवश्यकं साइट् कार्यक्षमतां सक्षमं कर्तुं, तथैव विपणनं, व्यक्तिगतीकरणं, विश्लेषणं च सक्षमं कुर्मः। “सर्वं स्वीकुर्वन्तु” इति क्लिक् कृत्वा भवान् अस्माकं कुकीज-उपयोगाय सहमतिम् अददात् । भवान् कदापि स्वस्य सेटिङ्ग्स् परिवर्तयितुं शक्नोति । कुकी नीति।",
+        "learnMore": "अनुकूलितं कुर्वन्तु",
+        "changeDescription": " "
+      },
+      "save": "स्वीकरोतु",
+      "consentModal": {
+        "title": "सहमतिप्राथमिकता अनुकूलितं कुर्वन्तु",
+        "description": "वयं कुकीजस्य उपयोगं कुर्मः यत् भवतः पृष्ठानां मध्ये कुशलतापूर्वकं भ्रमणं कर्तुं, भवतः प्राधान्यानि संग्रहीतुं, सामान्यतया च भवतः वेबसाइटस्य अनुभवं सुधारयितुम्। तथापि वयं भवतः गोपनीयतायाः अधिकारं स्वीकुर्मः अतः भवान् केषाञ्चन प्रकाराणां कुकीजस्य अनुमतिं न दातुं चयनं कर्तुं शक्नोति । अधिकं ज्ञातुं अस्माकं पूर्वनिर्धारितसेटिंग्स् परिवर्तयितुं च भिन्न-भिन्न-वर्ग-शीर्षकेषु क्लिक् कुर्वन्तु । कृपया ज्ञातव्यं यत् कतिपयप्रकारस्य कुकीजस्य अवरोधेन भवतः साइट्-अनुभवः प्रभावितः भवितुम् अर्हति ।",
+        "buttons": {
+          "save": "स्वीकरोतु",
+          "acceptAll": "सर्वान् स्वीकुरुत",
+          "decline": "न (Opt-out) ९."
+        }
+      },
+      "poweredBy": "Powered by Seqrite",
+      "purposes": {},
+      "service": {
+        "disableAll": {
+          "description": "न (Opt-out) ९.",
+          "title": "न (Opt-out) ९."
+        },
+        "optOut": {
+          "description": "Opt Out",
+          "title": "Opt Out"
+        }
+      },
+      "purposeItem": {
+        "service": "Cookie",
+        "services": "Cookies"
+      },
+      "contextualConsent": {
+        "description": "To show this content, we need your consent. Please accept the relevant cookies.",
+        "acceptOnce": "Accept once",
+        "acceptAlways": "Accept always"
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "वयं एतानि कुकीजं वेबसाइट् कार्यक्षमतां वर्धयितुं उपयोक्तृ-अनुभवं सुधारयितुम् उपयुञ्ज्महे । सूचनायां प्रवेशदत्तांशः, क्षेत्रं, भाषा, वर्धिता सामग्री च अन्तर्भवितुं शक्नोति ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>"
+      },
+      "marketing": {
+        "title": "Marketing",
+        "description": "एतानि कुकीजानि अस्माकं विज्ञापनसाझेदाराः व्यक्तिगतविज्ञापनं वितरितुं विपणन-अभियानानां प्रभावशीलतां मापनार्थं च उपयुज्यन्ते । ते उपयोक्तृरुचिं ब्राउजिंग् व्यवहारं च आधारितं प्रासंगिकं प्रचारं प्रदातुं साहाय्यं कुर्वन्ति ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>"
+      },
+      "others": {
+        "title": "Others",
+        "description": "अस्मिन् वर्गे एतादृशाः कुकीजाः सन्ति ये पूर्वनिर्धारितवर्गेषु न उपयुज्यन्ते परन्तु कतिपयानां वेबसाइट् कार्यक्षमतायाः अथवा सुधारणानां कृते आवश्यकाः भवितुम् अर्हन्ति ।<details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>"
       }
     }
   },
@@ -183,9 +1350,9 @@ window.klaroConfig = {
   "declarative": false,
   "groupByPurpose": false,
   "hideToggleAll": false,
-  "appName": "SDP Dev Cookie Enforcement",
+  "appName": "Demo",
   "description": "We respects your privacy and is committed to protecting your personal data.",
-  "companyName": "SDP Dev Cookie Enforcement",
+  "companyName": "Demo",
   "companyAddress": " ",
   "doubleOptIn": {
     "enabled": true,
@@ -204,35 +1371,63 @@ window.klaroConfig = {
   },
   "services": [
     {
-      "name": "analytics",
-      "title": "Analytics",
-      "description": "<p>These cookies help us analyze website traffic, user behavior, and engagement patterns. The insights gathered allow us to optimize content, enhance usability, and improve overall site performance.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;_ga_89RWJTCPLZ</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Google Analytics</div></div></div></details>",
+      "name": "functional",
+      "title": "Functional",
+      "description": "<p>We use these cookies to enhance website functionality and improve user experience. Information can include login data, region, language, and enhanced content.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;AEC</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Functional Cookies</div></div></div></details>",
+      "purposes": [],
+      "required": true,
+      "default": false,
+      "optOut": false,
+      "onlyOnce": true,
+      "cookies": [
+        "AEC"
+      ]
+    },
+    {
+      "name": "marketing",
+      "title": "Marketing",
+      "description": "<p>These cookies are used by our advertising partners to deliver personalized ads and measure the effectiveness of marketing campaigns. They help provide relevant promotions based on user interests and browsing behavior.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">1 Cookie</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;NID</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Marketing Cookies</div></div></div></details>",
       "purposes": [],
       "required": false,
       "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "_ga",
-        "_ga_89RWJTCPLZ"
+        "NID"
       ]
     },
     {
       "name": "others",
       "title": "Others",
-      "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;https://cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;marketing_id</div><div><b>Host:</b>&nbsp;cookie-consent-enforcement-sdpdev.netlify.app</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>",
+      "description": "<p>This category includes cookies that do not fit into the predefined categories but may be necessary for certain website functionalities or improvements.</p><details style=\"margin-top:10px\"><summary style=\"cursor:pointer;font-weight:600;padding:2px 0\">2 Cookies</summary><div style=\"margin-top:6px;max-height:150px;overflow-y:auto\"><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-BUCKET</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div><div style=\"padding:5px 0;border-bottom:1px solid rgba(0,0,0,0.07);font-size:12px;line-height:1.8\"><div><b>Name:</b>&nbsp;__Secure-STRP</div><div><b>Host:</b>&nbsp;google.com</div><div><b>Service:</b>&nbsp;Other Cookies</div></div></div></details>",
       "purposes": [],
       "required": false,
       "default": false,
       "optOut": false,
       "onlyOnce": true,
       "cookies": [
-        "https://cookie-consent-enforcement-sdpdev.netlify.app",
-        "marketing_id"
+        "__Secure-BUCKET",
+        "__Secure-STRP"
       ]
     }
   ]
 };
+
+(function initKlaroConfig() {
+  if (!window.klaro || typeof window.klaro.setup !== 'function') {
+    return;
+  }
+
+  if (!window.klaroConfig) {
+    return;
+  }
+
+  try {
+    window.klaro.setup(window.klaroConfig);
+  } catch (error) {
+    console.error('Klaro setup failed:', error);
+  }
+})();
 
 (function setupDoubleOptInFlow() {
   const pollForManager = function(retries) {
@@ -243,7 +1438,16 @@ window.klaroConfig = {
       return;
     }
 
-    const manager = window.klaro.getManager();
+    let manager;
+    try {
+      manager = window.klaro.getManager(window.klaroConfig);
+    } catch (error) {
+      if (retries > 0) {
+        setTimeout(function() { pollForManager(retries - 1); }, 200);
+      }
+      return;
+    }
+
     if (!manager) {
       if (retries > 0) {
         setTimeout(function() { pollForManager(retries - 1); }, 200);
@@ -359,5 +1563,3 @@ window.klaroConfig = {
 
   pollForManager(40);
 })();
-
-showCookie();
